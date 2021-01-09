@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.8/css/jquery.mb.YTPlayer.min.css" integrity="sha512-+HWFHCZZfMe4XQRKS0bOzQ1r4+G2eknhMqP+FhFIkcmWPJlB4uFaIagSIRCKDOZI3IHc0t7z4+N/g2hIaO/JIw==" crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="test.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body>
+    <div class="modal fade" id="form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-bottom-0">
+                    <h5 class="modal-title" id="exampleModalLabel">Create Account</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="email1">Full Name</label>
+                            <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter Full Name">
+
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="country">Country of Residence</label>
+                                <input type="text" class="form-control" id="country" aria-describedby="emailHelp" placeholder="Enter Country of Residence">
+                            </div>
+                            <div class="form-group">
+                                <label for="program">Program of interest</label>
+                                <input type="text" class="form-control" id="country" aria-describedby="emailHelp" placeholder="Enter Program of Interest">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="program">Tell Us</label>
+                            <input type="text" class="form-control" id="country" aria-describedby="emailHelp" placeholder="How did you hear about us">
+                        </div>
+                        <div class="form-group">
+                            <label for="email1">Email address</label>
+                            <input type="email" class="form-control" id="email1" aria-describedby="emailHelp" placeholder="Enter email">
+
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer border-top-0 d-flex justify-content-center">
+                        <small id="emailHelp" class="form-text text-muted">Your information is safe with us.</small>
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class=" icon-bar">
+        <a href="https://www.facebook.com/uni.azteca.internacional"><img class="linkedin" src="images/facebook-3.svg  "></a>
+        <a href="https://twitter.com/uniazteca?ref_src=twsrc%5Etfw%7Ctwcamp%5Eembeddedtimeline%7Ctwterm%5Eprofile%3Auniazteca&ref_url=https%3A%2F%2Fwww.univ-azteca.edu.mx%2FEn%2Fundergraduate%2F"><img class="linkedin" src="images/twitter.svg  "></a>
+        <a href="#"><img class="linkedin" src="images/instagram-2016.svg  "></a>
+        <a href="#"><img class="linkedin" src="images/linkedin-icon-2.svg  "></a>
+        <a href="#"><img src="images/youtube-3.svg " class="youtube"></a>
+        <!-- <a href="#" target="_blank" class="enq1_btn_2"><img width="32" height="32" title="Whatsapp only" alt="Whatsapp only" src="https://www.spsu.ac.in/frontend_assets/whts.png" /> Whatsapp only</a> -->
+    </div>
+    <section class="sticky-top wow fadeInDown" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 1s; animation-name: fadeInDown;" id="navbar">
+
+        <div id='top-nav'>
+            <div class="container pt-3">
+                <div class="row">
+                    <div class="col-xl-6 col-6">
+                        <a href="tel:+525559863050" style="color:white;"><i class="fa fa-phone"></i> + 52 55 5986-3050</a>
+                    </div>
+                    <div class="col-xl-4 col-6">
+                        <a href="mailto:nowhere" style="color:white;"><i class="fa fa-envelope mr-1"></i>  international@univ-azteca.edu.mx</a>
+                    </div>
+                    <div class="col-xl-2">
+                        <button type="button " class="btn manual-btn btn-sm mt-2">Login</button>
+                        <button type="button" class="btn manual-btn btn-sm mt-2" data-toggle="modal" data-target="#form">Apply Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+
+                    <a class="navbar-brand" href="index.html"><img src="images/testLogo.svg"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+                    <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-xl-5 mx-xl-5">
+                            <li class="nav-item dropdown color-blue pl-3">
+                                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            About Us
+                    </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="visionMission.html">Vision and Mission</a>
+                                    <a class="dropdown-item" href="chancellorsMessage.html">Chancellors Message</a>
+
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown color-blue pl-3">
+                                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Academics
+                    </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="about.html">About Us</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown pl-3">
+                                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Admissions
+                    </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Requirements</a>
+                                    <a class="dropdown-item" href="refundPolicy.html">Refund Policy</a>
+                                    <a class="dropdown-item" href="#">Non-Discrimination Policy </a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown pl-3">
+                                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Educational Offer
+                    </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" style="color:#254aa5; " href="bachelors.html ">Bachelor Degree</a>
+                                    <a class="dropdown-item" style="color:#254aa5; " href="masters.html ">Master Degree</a>
+                                    <a class="dropdown-item" style="columns: #242424;" href="doctoral.html">Doctoral Degree </a>
+                                    <a class="dropdown-item" style="color:#254aa5; " href="honoraryDoctoral.html ">Honorary Doctoral degree </a>
+                                    <a class="dropdown-item" style="color:#254aa5; " href="postDoctoral.html ">Post Doctoral Degree </a>
+                                    <a class="dropdown-item" style="color:#254aa5;" href="postDoctoralFellowship.html">Post doctoral Fellowshio </a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown pl-3">
+                                <a class="nav-link dropdown-toggle text-white" href="# " id="navbarDropdown " role="button " data-toggle="dropdown " aria-haspopup="true " aria-expanded="false ">
+                    Research
+                  </a>
+                                <div class="dropdown-menu " aria-labelledby="navbarDropdown ">
+                                    <a class="dropdown-item " style="color:#254aa5; " href="# ">Action</a>
+                                    <a class="dropdown-item " style="color:#254aa5; " href="# ">Another action</a>
+                                    <a class="dropdown-item " href="# ">Something else here</a>
+                                </div>
+                            </li>
+                            <li></li>
+                        </ul>
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <section class="landing-page">
+
+
+        <div class="container">
+            <div class="landing-content">
+                <div class="container">
+                    <div class="col-xl-12">
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <h1 class="welcome-heading wow fadeIn" data-wow-delay="0.1s" style="visibility: visible;animation-name:fadeIn">Requirements For Admission</h1>
+                                <p class="text-white pt-4 welcome-content wow bounceIn" data-wow-delay="0.3s" style="visibility:visible; animation-name:bounceIn;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, laboriosam labore autem recusandae perspiciatis iusto tempore laborum corrupti maiores omnis quae vero, esse nemo perferendis fugit. Laudantium exercitationem
+                                    blanditiis tempora, aperiam qui quidem sint mollitia est beatae eaque, quis molestias natus, atque itaque iste at id pariatur ab odio facilis!</p>
+                                <button type="button" class="btn manual-btn wow bounceIn" data-wow-delay="0.4s" style="visibility: visible; animation-name:bounceIn">Get Started</button>
+
+                            </div>
+                            <div class="col-xl-6 p-3 ml-auto wow fadeIn" style="visibility: visible; animation-name:fadeIn">
+                                <img src="images/undraw_contract_uy56.svg" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="">
+        <div class="jumbotron">
+            <div class="col-xl-12 undergraduate pt-5">
+                <h1 class="text-center wow fadeIn " data-wow-delay="0.2s" style="visibility: visible; animation-name: fadeIn;">Undergraduate Programs</h1>
+                <p class="text-center pt-xl-3 wow fadeIn " data-wow-delay="0.3s" style="visibility: visible; animation-name:fadeIn"> Candidates of all undergraduate degree programs must:<br> Submit a 1-2 page typed narrative outlining one’s intent (e.g., reasons for undertaking a college degree, professional aspirations, etc.).</p>
+                <div class="row">
+                    <div class="col-xl-6">
+
+                        <ul class="list-group-1">
+                            <li class="list-group-item wow fadeIn " data-wow-delay="0.3s" style="visibility: visible; animation-name:fadeIn"><img src="images/tick.svg" width="20" height="20"> Duly signed and fully completed the Application Form for Admissions.</li>
+                            <li class="list-group-item wow fadeIn " data-wow-delay="0.4s" style="visibility: visible; animation-name:fadeIn"><img src="images/tick.svg" width="20" height="20"> Copies of High School Diploma or Equivalent.</li>
+                            <li class="list-group-item wow fadeIn " data-wow-delay="0.40s" style="visibility: visible; animation-name:fadeIn"><img src="images/tick.svg" width="20" height="20"> Copies of any Certificates and Credentials if available.</li>
+                            <li class="list-group-item wow fadeIn " data-wow-delay="0.60s" style="visibility: visible; animation-name:fadeIn"><img src="images/tick.svg" width="20" height="20"> Copies of all transcripts, diploma supplement or High School student record.</li>
+                            <li class="list-group-item wow fadeIn " data-wow-delay="0.7s" style="visibility: visible; animation-name:fadeIn"><img src="images/tick.svg" width="20" height="20"> All applicants are required to provide a Resume or CV.</li>
+                            <li class="list-group-item wow fadeIn " data-wow-delay="0.8s" style="visibility: visible; animation-name:fadeIn"><img src="images/tick.svg" width="20" height="20"> Passport Color Copy and Photo (Passport Style in formal dress).</li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-6">
+                        <img src="images/undraw_analyze_17kw.svg" class="img-fluid wow fadeIn " data-wow-delay="0.7s" style="visibility: visible; animation-name:fadeIn">
+                    </div>
+                </div>
+                <p class="text-dark pt-5 wow fadeIn " style="visibility: visible; animation-name:fadeIn"><img src="images/important.svg" width="40" height="40"> Students who have completed any postsecondary courses (technical [two-year] college, community college, four-year college or university) should submit as well an official transcript
+                    of all college-level work completed, in addition to (but not in place of) official proof of High School completion documents. Note: For all Admissions and evaluation procedures, only official or sometimes properly certified documents
+                    can be accepted. Those with former college/university Courses or Credits may, if appropriate, complete a “Petition for Transfer Credit” at the time of initial admission or as soon thereafter as possible. Please verify that courses
+                    have been completed at an Branch Campus or Accredited Center, Ministry of Ed. Recognized University, or Equivalent, that such courses should be aligned in content and level with those offered at Universidad Azteca (Azteca University).</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-xl-5 postgraduate">
+        <div class="container-fluid">
+            <div class="col-xl-12 pt-5">
+                <h1 class="text-center wow fadeIn " data-wow-delay="0.3s" style="visibility: visible; animation-name:fadeIn">GRADUATE ADMISSIONS </h1>
+                <p class="text-center p-3 text-white wow fadeIn " data-wow-delay="0.5s" style="visibility: visible; animation-name:fadeIn"> Candidates for Admission to all Master’s degree programs must:<br> Indicate the program for which he/she is applying.</p>
+
+                <div class="row">
+                    <div class="col-xl-6">
+                        <ul class=" list-group-2">
+                            <li class="list-group-item wow fadeIn " data-wow-delay="0.3s" style="visibility: visible; animation-name:fadeIn"><img src="images/tick.svg" width="20" height="20"> Duly signed and fully completed the Application Form for Admissions.</li>
+                            <li class="list-group-item wow fadeIn " data-wow-delay="0.4s" style="visibility: visible; animation-name:fadeIn"><img src="images/tick.svg" width="20" height="20"> Copies of all Diploma, Academic Degrees, Certificates and Credentials awarded or issued by accredited or recognized Colleges, Universities, or Postsecondary Institutions..</li>
+                            <li class="list-group-item wow fadeIn " data-wow-delay="0.5s" style="visibility: visible; animation-name:fadeIn"><img src="images/tick.svg" width="20" height="20"> Copies of all previous studies (transcripts, diploma supplement).</li>
+                            <li class="list-group-item wow fadeIn " data-wow-delay="0.6s" style="visibility: visible; animation-name:fadeIn"><img src="images/tick.svg" width="20" height="20"> All applicants are required to provide a Resume or CV.</li>
+                            <li class="list-group-item wow fadeIn " data-wow-delay="0.7s" style="visibility: visible; animation-name:fadeIn"><img src="images/tick.svg" width="20" height="20"> Passport Color Copy.</li>
+                            <li class="list-group-item wow fadeIn " data-wow-delay="0.8s" style="visibility: visible; animation-name:fadeIn"><img src="images/tick.svg" width="20" height="20"> Photo (Passport Style in formal dress).</li>
+                        </ul>
+
+                    </div>
+                    <div class="col-xl-6 ">
+                        <img src="images/undraw_site_content_ihgn.svg" class="img-fluid wow fadeIn " data-wow-delay="0.8s" style="visibility: visible; animation-name:fadeIn">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pt-xl-5">
+        <div class="container-fluid">
+            <div class="col-xl-12 pt-5">
+                <h1 class="text-center wow fadeIn " data-wow-delay="0.3s" style="visibility: visible; animation-name:fadeIn">MANDATORY GRADUATE DEGREE <br>CANDIDATE INTERVIEW </h1>
+                <p class="text-center pt-3 text-dark wow fadeIn " data-wow-delay="0.4s" style="visibility: visible; animation-name:fadeIn"> Most Master and Doctoral applications include an interview of some sort.<br> This allows us to discuss the Doctoral Degree particulars with you in more detail.</p>
+
+                <div class="row">
+                    <div class="col-xl-6 pt-xl-4">
+                        <p class="text-muted text-dark font-weight-bold wow fadeIn " data-wow-delay="0.45s" style="visibility: visible; animation-name:fadeIn">We will ask you about your background, goals and project, we will discuss how Azteca University can help you achieve your professional goals at Doctoral Levels. Once Azteca University has invited you for an interview it’s a safe
+                            bet that we think you can complete Graduate Program. This makes the interview an important part of your Graduate application. Your interview will be an important part of your postgraduate research application. This is your
+                            chance to meet your prospective Department, discuss your project and show your potential as an Academic Researcher. Please confirm the best date and time for you, and tell us your local time zone, we have elite of Graduate
+                            and Post-Graduate Students all around the world; please confirm your City and –country of Residence.<br>Those with former College/University Courses or from one of our Accredited Centers (Branch Campus) at the Graduate level
+                            may, if appropriate, complete a Transfer Credit Process at the time of initial application or as soon thereafter as possible. Please verify that courses have been completed at an accredited or Ministry-recognized University
+                            or equivalent, that the institution is specifically approved to offer graduate degrees, and that the course or courses is/are aligned in content and level with that/those offered at Universidad Azteca.</p>
+                    </div>
+                    <div class="col-xl-6 ">
+                        <img src="images/undraw_interview_rmcf.svg" class="img-fluid wow fadeIn " data-wow-delay="0.5s" style="visibility: visible; animation-name:fadeIn">
+                    </div>
+                </div>
+                <p class="text-dark wow fadeIn " data-wow-delay="0.3s" style="visibility: visible; animation-name:fadeIn">Note: It is essential to receive complete Paperwork for Admissions in order to prepare the Evaluation Report to include each petitioned course for transfer into a graduate program.Hold the minimum of a High School or Bachelor’s degree
+                    from an accredited or Ministry-recognized institution of higher education.<br><br><b> Hold the minimum of a High School or Bachelor’s degree from an accredited or Ministry-recognized institution of higher education. Request that official
+                    certification or proof of degree completion be forwarded directly from the issuing institution (or official agency) to Universidad Azteca. Note: Official documents are those issued by the school attended, or by a Ministry of Education
+                    or by other agencies, if deemed acceptable by Universidad Azteca.</b></p>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+
+        <div class="footer ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-lg-3 ">
+                        <p class="mb-4 "><img src="images/testLogo.svg" alt="Image " class="img-fluid "></p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nemo minima qui dolor, iusto iure.</p>
+                        <p><a href="# ">Learn More</a></p>
+                    </div>
+                    <div class="col-lg-3 ">
+                        <h3 class="footer-heading "><span>Academic Units</span></h3>
+                        <ul class="list-unstyled ">
+                            <li><a href="# ">Acuna</a></li>
+                            <li><a href="# ">Cancun</a></li>
+                            <li><a href="# ">Chalco</a></li>
+                            <li><a href="# ">The Kings</a></li>
+                            <li><a href="# ">San Juan del Rio</a></li>
+                            <li><a href="# ">Saint vincent</a></li>
+                            <li><a href="# ">Toluca</a></li>
+                            <li><a href="# ">Saragossa</a></li>
+                            <li><a href="# ">Zumpango</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 ">
+                        <h3 class="footer-heading "><span>Educational Offerings</span></h3>
+                        <ul class="list-unstyled ">
+                            <li><a href="# ">Bachelor Program</a></li>
+                            <li><a href="# ">Masters Program</a></li>
+                            <li><a href="# ">Doctoral Program</a></li>
+                            <li><a href="# ">Honorary Doctoral Program</a></li>
+                            <li><a href="# ">Post Doctoral {rogram</a></li>
+                            <li><a href="# ">Post Doctoral Fellowship</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 ">
+
+                        <h3 class="footer-heading "><span>Contact</span></h3>
+                        <ul class="list-unstyled ">
+                            <li><a href="tel:+525559863050" style="color:white;"><i class="fa fa-phone"></i> + 52 55 5986-3050</a></li>
+                            <li><a href="mailto:nowhere" style="color:white;"><i class="fa fa-envelope mr-1"></i>  international@univ-azteca.edu.mx</a></li>
+                            <li><button type="button " class="btn manual-btn btn-sm mt-2">Login</button></li>
+                            <li><button type="button" class="btn manual-btn btn-sm mt-2" data-toggle="modal" data-target="#form">Apply Now</button></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="top-up-btn ">
+        <a href="#"><button type="button " class="up-btn btn-outline-warning " id="scroll-top-btn "><img src="images/upArrow.png " width="30 " height="30 "></button></a>
+    </div>
+
+
+
+
+
+    <script type="text/javascript " src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js "></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx " crossorigin="anonymous "></script>
+    <script src="js/owl.carousel.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js " integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin=" anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.8/jquery.mb.YTPlayer.min.js " integrity="sha512-jI/qyLWsZ9Tk0zrPfJgRFV5f0E/jGboe1Ellx881310LBvxDuKY5QX71GnBivDmBpsW12Wcrqrg48wN5/x3mjQ==" crossorigin=" anonymous "></script>
+    <script src="js/index.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+</body>
+
+</html>

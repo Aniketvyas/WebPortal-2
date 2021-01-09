@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.8/css/jquery.mb.YTPlayer.min.css" integrity="sha512-+HWFHCZZfMe4XQRKS0bOzQ1r4+G2eknhMqP+FhFIkcmWPJlB4uFaIagSIRCKDOZI3IHc0t7z4+N/g2hIaO/JIw==" crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="modal fade" id="form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-bottom-0">
+                    <h5 class="modal-title" id="exampleModalLabel">Create Account</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="email1">Full Name</label>
+                            <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter Full Name">
+
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="country">Country of Residence</label>
+                                <input type="text" class="form-control" id="country" aria-describedby="emailHelp" placeholder="Enter Country of Residence">
+                            </div>
+                            <div class="form-group">
+                                <label for="program">Program of interest</label>
+                                <input type="text" class="form-control" id="country" aria-describedby="emailHelp" placeholder="Enter Program of Interest">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="program">Tell Us</label>
+                            <input type="text" class="form-control" id="country" aria-describedby="emailHelp" placeholder="How did you hear about us">
+                        </div>
+                        <div class="form-group">
+                            <label for="email1">Email address</label>
+                            <input type="email" class="form-control" id="email1" aria-describedby="emailHelp" placeholder="Enter email">
+
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer border-top-0 d-flex justify-content-center">
+                        <small id="emailHelp" class="form-text text-muted">Your information is safe with us.</small>
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class=" icon-bar">
+        <a href="#"><img class="linkedin" src="images/facebook-3.svg  "></a>
+        <a href="#"><img class="linkedin" src="images/twitter.svg  "></a>
+        <a href="#"><img class="linkedin" src="images/instagram-2016.svg  "></a>
+        <a href="#"><img class="linkedin" src="images/linkedin-icon-2.svg  "></a>
+        <a href="#"><img src="images/youtube-3.svg " class="youtube"></a>
+        <!-- <a href="#" target="_blank" class="enq1_btn_2"><img width="32" height="32" title="Whatsapp only" alt="Whatsapp only" src="https://www.spsu.ac.in/frontend_assets/whts.png" /> Whatsapp only</a> -->
+    </div>
+
+    <section class="sticky-top" id="navbar">
+
+        <div id='top-nav'>
+            <div class="container pt-3">
+                <div class="row">
+                    <div class="col-xl-6 col-6">
+                        <a href="tel:+525559863050" style="color:white;"><i class="fa fa-phone"></i> + 52 55 5986-3050</a>
+                    </div>
+                    <div class="col-xl-4 col-6">
+                        <a href="mailto:nowhere" style="color:white;"><i class="fa fa-envelope mr-1"></i>  international@univ-azteca.edu.mx</a>
+                    </div>
+                    <div class="col-xl-2">
+                        <button type="button " class="btn manual-btn btn-sm mt-2">Login</button>
+                        <button type="button" class="btn manual-btn btn-sm mt-2" data-toggle="modal" data-target="#form">Apply Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+
+                    <a class="navbar-brand" href="index.html"><img src="images/testLogo.svg"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                    <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-xl-5 mx-xl-5">
+                            <li class="nav-item dropdown color-blue pl-3">
+                                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                About Us
+                        </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="visionMission.html">Vision and Mission</a>
+                                    <a class="dropdown-item" href="chancellorsMessage.html">Chancellors Message</a>
+
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown color-blue pl-3">
+                                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Academics
+                        </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="about.html">About Us</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown pl-3">
+                                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         Admissions
+                        </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="refundPolicy.html">Requirements</a>
+                                    <a class="dropdown-item" href="refundPolicy.html">Refund Policy</a>
+                                    <a class="dropdown-item" href="nonDiscriminationPolicy.html">Non Discrimination Policy</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown pl-3">
+                                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Educational Offer
+                    </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" style="color:#254aa5; " href="bachelors.html ">Bachelor Degree</a>
+                                    <a class="dropdown-item" style="color:#254aa5; " href="masters.html ">Master Degree</a>
+                                    <a class="dropdown-item" style="columns: #242424;" href="doctoral.html">Doctoral Degree </a>
+                                    <a class="dropdown-item" style="color:#254aa5; " href="honoraryDoctoral.html ">Honorary Doctoral degree </a>
+                                    <a class="dropdown-item" style="color:#254aa5; " href="postDoctoral.html ">Post Doctoral Degree </a>
+                                    <a class="dropdown-item" style="color:#254aa5;" href="postDoctoralFellowship.html">Post doctoral Fellowshio </a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown pl-3">
+                                <a class="nav-link dropdown-toggle text-white" href="# " id="navbarDropdown " role="button " data-toggle="dropdown " aria-haspopup="true " aria-expanded="false ">
+                        Research
+                      </a>
+                                <div class="dropdown-menu " aria-labelledby="navbarDropdown ">
+                                    <a class="dropdown-item " style="color:#254aa5; " href="# ">Action</a>
+                                    <a class="dropdown-item " style="color:#254aa5; " href="# ">Another action</a>
+                                    <a class="dropdown-item " href="# ">Something else here</a>
+                                </div>
+                            </li>
+                            <li></li>
+                        </ul>
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <section class="landing-page">
+
+
+        <div class="container">
+            <div class="landing-content">
+                <div class="container">
+                    <div class="col-xl-12">
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <h1 class="mt-xl-5 pt-xl-5 welcome-heading">Welcome to Universidad Azetca</h1>
+                                <p class="text-white pt-4 welcome-content">We are focused on the individual self, offering each student a life plan that allows discovering the inner potential positively, allowing to find the right path, giving meaning to their lives and conduct their work based
+                                    on humanist priciples, building lives with the values of truth, justice and honesty.</p>
+                                <button type="button " class="btn manual-btn ">Get Started</button>
+
+                            </div>
+                            <div class="col-xl-6 ">
+                                <img src="images/undraw_professor_8lrt.svg " class="img-fluid ">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container page-info mt-5 mb-5 ">
+        <h1 style="color:#254aa5; ">Vision and Mission</h1>
+        <img src="images/coloredLine.png ">
+    </div>
+
+
+
+
+    <section class="mt-xl-5 ">
+        <div class="jumbotron ">
+            <div class="col-xl-12 ">
+                <div class="row ">
+                    <div class="col-xl-5 ">
+                        <img src="images/visionImage.png " class="img-fluid ">
+                    </div>
+                    <div class="col-xl-7 ">
+                        <div class="container ">
+                            <div class="col-xl-12 p-4 vision-wrapper ">
+                                <h1>Our Vision</h1>
+                                <img src="images/coloredLine.png "><br><br>
+                                <p class="text-muted ">Azteca University must be a decisive factor in the economic, political, social and cultural development of Mexico, and the world, through its educational services, in its different modalities, seeking the excellence of
+                                    its Alumni, to produce significant impacts in scientific and technological knowledge, understanding their social environment and capable to protect the truth, maintaining the highest Spirit of Self-improvement and service.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid ">
+            <div class="col-xl-12 ">
+                <div class="row ">
+                    <div class="col-xl-7 ">
+                        <div class="container ">
+                            <div class="col-xl-12 vision-wrapper ">
+                                <h1>Our Mission</h1>
+                                <img src="images/coloredLine.png "><br><br>
+                                <p class="text-muted ">Azteca University is an Institution of Higher Education, Humanist, Christian, and inspired by the Life of Saint Jean-Baptiste de La Salle, whose mission is the integral and Self-realization of human being, educating people
+                                    with values and the highest academic level, capable to promote a positive environment of which they belong.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 " style="height:90vh; ">
+                        <img src="images/missionHalf.png " style="height: 60vh; " class="img-fluid ">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+
+        <div class="footer ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-lg-3 ">
+                        <p class="mb-4 "><img src="images/testLogo.svg" alt="Image " class="img-fluid "></p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nemo minima qui dolor, iusto iure.</p>
+                        <p><a href="# ">Learn More</a></p>
+                    </div>
+                    <div class="col-lg-3 ">
+                        <h3 class="footer-heading "><span>Academic Units</span></h3>
+                        <ul class="list-unstyled ">
+                            <li><a href="# ">Acuna</a></li>
+                            <li><a href="# ">Cancun</a></li>
+                            <li><a href="# ">Chalco</a></li>
+                            <li><a href="# ">The Kings</a></li>
+                            <li><a href="# ">San Juan del Rio</a></li>
+                            <li><a href="# ">Saint vincent</a></li>
+                            <li><a href="# ">Toluca</a></li>
+                            <li><a href="# ">Saragossa</a></li>
+                            <li><a href="# ">Zumpango</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 ">
+                        <h3 class="footer-heading "><span>Educational Offerings</span></h3>
+                        <ul class="list-unstyled ">
+                            <li><a href="# ">Bachelor Program</a></li>
+                            <li><a href="# ">Masters Program</a></li>
+                            <li><a href="# ">Doctoral Program</a></li>
+                            <li><a href="# ">Honorary Doctoral Program</a></li>
+                            <li><a href="# ">Post Doctoral {rogram</a></li>
+                            <li><a href="# ">Post Doctoral Fellowship</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 ">
+
+                        <h3 class="footer-heading "><span>Contact</span></h3>
+                        <ul class="list-unstyled ">
+                            <li><a href="tel:+525559863050" style="color:white;"><i class="fa fa-phone"></i> + 52 55 5986-3050</a></li>
+                            <li><a href="mailto:nowhere" style="color:white;"><i class="fa fa-envelope mr-1"></i>  international@univ-azteca.edu.mx</a></li>
+                            <li><button type="button " class="btn manual-btn btn-sm mt-2">Login</button></li>
+                            <li><button type="button" class="btn manual-btn btn-sm mt-2" data-toggle="modal" data-target="#form">Apply Now</button></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <div class="top-up-btn ">
+        <button type="button " onclick="topFunction() " class="up-btn btn-outline-warning " id="scroll-top-btn "><a href="# "><img src="images/upArrow.png " width="30 " height="30 "></a></button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript " src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js "></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx " crossorigin="anonymous "></script>
+    <script src="js/owl.carousel.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js " integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin=" anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.8/jquery.mb.YTPlayer.min.js " integrity="sha512-jI/qyLWsZ9Tk0zrPfJgRFV5f0E/jGboe1Ellx881310LBvxDuKY5QX71GnBivDmBpsW12Wcrqrg48wN5/x3mjQ==" crossorigin=" anonymous "></script>
+    <script src="js/index.js "></script>
+</body>
+
+</html>

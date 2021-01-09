@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.8/css/jquery.mb.YTPlayer.min.css" integrity="sha512-+HWFHCZZfMe4XQRKS0bOzQ1r4+G2eknhMqP+FhFIkcmWPJlB4uFaIagSIRCKDOZI3IHc0t7z4+N/g2hIaO/JIw==" crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="test.css"> -->
+    <link rel="stylesheet" href="css/rotator.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+</head>
+
+<body>
+    <div class="modal fade" id="form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-bottom-0">
+                    <h5 class="modal-title" id="exampleModalLabel">Create Account</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="email1">Full Name</label>
+                            <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter Full Name">
+
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="country">Country of Residence</label>
+                                <input type="text" class="form-control" id="country" aria-describedby="emailHelp" placeholder="Enter Country of Residence">
+                            </div>
+                            <div class="form-group">
+                                <label for="program">Program of interest</label>
+                                <input type="text" class="form-control" id="country" aria-describedby="emailHelp" placeholder="Enter Program of Interest">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="program">Tell Us</label>
+                            <input type="text" class="form-control" id="country" aria-describedby="emailHelp" placeholder="How did you hear about us">
+                        </div>
+                        <div class="form-group">
+                            <label for="email1">Email address</label>
+                            <input type="email" class="form-control" id="email1" aria-describedby="emailHelp" placeholder="Enter email">
+
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer border-top-0 d-flex justify-content-center">
+                        <small id="emailHelp" class="form-text text-muted">Your information is safe with us.</small>
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class=" icon-bar">
+        <a href="https://www.facebook.com/uni.azteca.internacional"><img class="linkedin" src="images/facebook-3.svg  "></a>
+        <a href="https://twitter.com/uniazteca?ref_src=twsrc%5Etfw%7Ctwcamp%5Eembeddedtimeline%7Ctwterm%5Eprofile%3Auniazteca&ref_url=https%3A%2F%2Fwww.univ-azteca.edu.mx%2FEn%2Fundergraduate%2F"><img class="linkedin" src="images/twitter.svg  "></a>
+        <a href="#"><img class="linkedin" src="images/instagram-2016.svg  "></a>
+        <a href="#"><img class="linkedin" src="images/linkedin-icon-2.svg  "></a>
+        <a href="#"><img src="images/youtube-3.svg " class="youtube"></a>
+        <!-- <a href="#" target="_blank" class="enq1_btn_2"><img width="32" height="32" title="Whatsapp only" alt="Whatsapp only" src="https://www.spsu.ac.in/frontend_assets/whts.png" /> Whatsapp only</a> -->
+    </div>
+    <section class="sticky-top wow fadeInDown" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 1s; animation-name: fadeInDown;" id="navbar">
+
+        <div id='top-nav'>
+            <div class="container pt-3">
+                <div class="row">
+                    <div class="col-xl-6 col-6">
+                        <a href="tel:+525559863050" style="color:white;"><i class="fa fa-phone"></i> + 52 55 5986-3050</a>
+                    </div>
+                    <div class="col-xl-4 col-6">
+                        <a href="mailto:nowhere" style="color:white;"><i class="fa fa-envelope mr-1"></i>  international@univ-azteca.edu.mx</a>
+                    </div>
+                    <div class="col-xl-2">
+                        <button type="button " class="btn manual-btn btn-sm mt-2">Login</button>
+                        <button type="button" class="btn manual-btn btn-sm mt-2" data-toggle="modal" data-target="#form">Apply Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+
+                    <a class="navbar-brand" href="index.html"><img src="images/testLogo.svg"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+                    <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-xl-5 mx-xl-5">
+                            <li class="nav-item dropdown color-blue pl-3">
+                                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            About Us
+                    </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="visionMission.html">Vision and Mission</a>
+                                    <a class="dropdown-item" href="chancellorsMessage.html">Chancellor Message</a>
+
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown color-blue pl-3">
+                                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Academics
+                    </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="about.html">About Us</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown pl-3">
+                                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Admissions
+                    </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="requirement.html">Requirements</a>
+                                    <a class="dropdown-item" href="refundPolicy.html">Refund Policy</a>
+                                    <a class="dropdown-item" href="nonDiscriminationPolicy.html">Non-Discrimination Policy </a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown pl-3">
+                                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Educational Offer
+                    </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" style="color:#254aa5; " href="bachelors.html ">Bachelor Degree</a>
+                                    <a class="dropdown-item" style="color:#254aa5; " href="masters.html">Master Degree</a>
+                                    <a class="dropdown-item" style="columns: #242424;" href="doctoral.html">Doctoral Degree </a>
+                                    <a class="dropdown-item" style="color:#254aa5; " href="honoraryDoctoral.html ">Honorary Doctoral degree </a>
+                                    <a class="dropdown-item" style="color:#254aa5; " href="postDoctoral.html ">Post Doctoral Degree </a>
+                                    <a class="dropdown-item" style="color:#254aa5;" href="postDoctoralFellowship.html">Post doctoral Fellowshio </a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown pl-3">
+                                <a class="nav-link dropdown-toggle text-white" href="# " id="navbarDropdown " role="button " data-toggle="dropdown " aria-haspopup="true " aria-expanded="false ">
+                    Research
+                  </a>
+                                <div class="dropdown-menu " aria-labelledby="navbarDropdown ">
+                                    <a class="dropdown-item " style="color:#254aa5; " href="# ">Action</a>
+                                    <a class="dropdown-item " style="color:#254aa5; " href="# ">Another action</a>
+                                    <a class="dropdown-item " href="# ">Something else here</a>
+                                </div>
+                            </li>
+                            <li></li>
+                        </ul>
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <section class="landing-page">
+
+
+        <div class="container">
+            <div class="landing-content">
+                <div class="container">
+                    <div class="col-xl-12">
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <h1 class="welcome-heading wow fadeIn " style="visibility: visible; animation-name: fadeIn;">Welcome to Universidad Azetca</h1>
+                                <p class="text-white pt-4 welcome-content wow bounceIn" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: bounceIn;">We are focused on the individual self, offering each student a life plan that allows discovering the inner potential positively, allowing to find the right path, giving meaning to their lives and conduct their work based
+                                    on humanist priciples, building lives with the values of truth, justice and honesty.</p>
+                                <button type="button" class="btn manual-btn wow bounceIn" style="visibility: visible; animation-delay: 0.3s; animation-name: bounceIn;" data-wow-delay="0.3s">Get Started</button>
+
+                            </div>
+                            <div class="col-xl-6 p-3 wow fadeIn" data-wow-delay="0.9s" style="visibility: visible;; animation-name: fadeIn;">
+                                <img src="images/undraw_professor_8lrt.svg" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="container-fluid">
+        <div class="fetured-info pt-lg-5 pt-3 mt-4">
+            <div class="container">
+                <h3 class="tittle text-center my-lg-5 my-3"><span class="sub-tittle">What we do</span>Overview</h3>
+                <p class="text-center">We are focused on the individual self, offering each student a life plan that allows discovering the inner potential positively, allowing to find the right path, giving meaning to their lives and conduct their work based on humanist priciples,
+                    building lives with the values of truth, justice and honesty. Universidad Azteca is a multi-campus university system of national and international representatives. The coverage of Universidad Azteca´s International Liaison extends
+                    to various regions worldwide.</p>
+            </div>
+            <div class="row fetured-sec mt-lg-5">
+
+                <div class="col-lg-6 serv_bottom">
+                    <div class="featured-left text-center row">
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="bottom-gd fea">
+                                <div class="box">
+                                    <img src="images/tech/app.svg" class="img-fluid">
+                                    <span class="count-number" id="live-app">60</span>
+                                    <span class="plus">+</span>
+                                    <p class="text-capitalize box-text">campus worldwide</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="bottom-gd fea active">
+                                <div class="box">
+                                    <img src="images/tech/creative.svg" class="img-fluid">
+                                    <span class="count-number" id="creative">200</span>
+                                    <span class="plus ">+</span>
+                                    <p class="text-capitalize box-text">Faculty</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="bottom-gd fea">
+                                <div class="box">
+                                    <img src="images/tech/connections.svg" class="img-fluid">
+                                    <span class="count-number" id="connection">4000</span>
+                                    <span class="plus ">+</span>
+                                    <p class="text-capitalize box-text">Students Enrolled</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="bottom-gd fea">
+                                <div class="box">
+                                    <img src="images/tech/coffe.svg" class="img-fluid">
+                                    <span class="count-number" id="coffee">400</span>
+                                    <span class="plus ">+</span>
+                                    <p class="text-capitalize box-text">Collaborations</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <video autoplay muted loop>
+                    <source src="images/universidadAzteca.mp4" type="video/mp4" />
+                </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="main-container">
+        <section class="hire-developer">
+            <div class="container-fluid">
+                <div class="main-content">
+                    <div class="heading">
+                        <div class="heading-content">
+                            <h2 class="text-uppercase wow fadeInLeft" style="visibility: visible;animation-name:fadeInLeft;">Grab Knowledge</h2>
+                            <p class="sub-heading wow fadeIn" data-wow-delay="0.3s" style="visibility: visible;animation-name:fadeIn">your Learnings, our expertise</p>
+                            <p class="sub-heading-content wow fadeIn" data-wow-delay="0.5s" style="visibility: visible;animation-name:fadeIn">As a dynamic university, we strive to offer,through effective teaching, quality education founded on the idea that one’s intellectual and personal development go hand in hand, complementing and fulfilling each other.</p>
+                        </div>
+                    </div>
+                    <div class="hire-content wow fadeInRight" style=" visibility: visible; animation-name:fadeInRight">
+                        <div class="image-container">
+                            <div class="img-content">
+                                <p>Android</p>
+                            </div>
+                            <div class="img-content">
+                                <p>AngularJS</p>
+                            </div>
+                            <div class="img-content">
+                                <p>Drupal</p>
+                            </div>
+                            <div class="img-content">
+                                <p>Ionic</p>
+                            </div>
+                            <div class="img-content">
+                                <p>iOS</p>
+                            </div>
+                            <div class="img-content">
+                                <p>Java</p>
+                            </div>
+                            <div class="img-content">
+                                <p>Laravel</p>
+                            </div>
+                            <div class="img-content">
+                                <p>Magento</p>
+                            </div>
+                            <div class="img-content">
+                                <p>ReactJS</p>
+                            </div>
+                            <div class="img-content">
+                                <p>Prestashop</p>
+                            </div>
+                            <div class="img-content">
+                                <p>Python</p>
+                            </div>
+                            <div class="img-content">
+                                <p>Ruby on Rails</p>
+                            </div>
+                            <div class="img-content">
+                                <p>Symfony</p>
+                            </div>
+                            <div class="img-content">
+                                <p>WordPress</p>
+                            </div>
+                            <div class="rotating-images">
+                                <div class="img-box">
+                                    <img src="images/tech/android.png">
+                                </div>
+                                <div class="img-box">
+                                    <img src="images/tech/android.png">
+                                </div>
+                                <div class="img-box">
+                                    <img src="images/tech/android.png">
+                                </div>
+                                <div class="img-box">
+                                    <img src="images/tech/android.png">
+                                </div>
+                                <div class="img-box">
+                                    <img src="images/tech/android.png">
+                                </div>
+                                <div class="img-box">
+                                    <img src="images/tech/android.png">
+                                </div>
+                                <div class="img-box">
+                                    <img src="images/tech/android.png">
+                                </div>
+                                <div class="img-box">
+                                    <img src="images/tech/android.png">
+                                </div>
+                                <div class="img-box">
+                                    <img src="images/tech/android.png">
+                                </div>
+                                <div class="img-box">
+                                    <img src="images/tech/android.png">
+                                </div>
+                                <div class="img-box">
+                                    <img src="images/tech/android.png">
+                                </div>
+                                <div class="img-box">
+                                    <img src="images/tech/android.png">
+                                </div>
+                                <div class="img-box">
+                                    <img src="images/tech/android.png">
+                                </div>
+                                <div class="img-box">
+                                    <img src="images/tech/android.png">
+                                </div>
+
+
+                                <div class="middle-img">
+                                    <img src="images/undraw_education_f8ru.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+    <section>
+        <div class="site-section" id="testi">
+            <div class="container">
+                <div class="mb-5">
+                    <div class="text-center">
+                        <p class="text-white text-center wow fadeIn" style="visibility:visible;animation-name:fadeIn;font-size:2rem;">Our Testimonials</p>
+                        <h3 class="text-white text-center wow fadeIn" style="visibility: visible;animation-name:fadeIn">SEE WHAT OUR SATISFIED STUDENTS ARE SAYING ABOUT US</h3>
+
+                    </div>
+                </div>
+                <div class="owl-slide owl-carousel ">
+                    <div class="ftco-testimonial-1 ">
+                        <div class="ftco-testimonial-vcard d-flex align-items-center mb-4 ">
+                            <img src="images/testi6.jpg " alt="Image " class="img-fluid mr-3 ">
+                            <div>
+                                <h3>Allison Holmes</h3>
+                                <span>Designer</span>
+                            </div>
+                        </div>
+                        <div>
+                            <p>&ldquo;Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, mollitia. Possimus mollitia nobis libero quidem aut tempore dolore iure maiores, perferendis, provident numquam illum nisi amet necessitatibus. A, provident
+                                aperiam!&rdquo;
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ftco-testimonial-1 ">
+                        <div class="ftco-testimonial-vcard d-flex align-items-center mb-4 ">
+                            <img src="images/testi5.jpg " alt="Image " class="img-fluid mr-3 ">
+                            <div>
+                                <h3>Allison Holmes</h3>
+                                <span>Designer</span>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, mollitia. Possimus mollitia nobis libero quidem aut tempore dolore iure maiores, perferendis, provident numquam illum nisi amet necessitatibus. A, provident aperiam!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ftco-testimonial-1 ">
+                        <div class="ftco-testimonial-vcard d-flex align-items-center mb-4 ">
+                            <img src="images/testi4.jpg " alt="Image " class="img-fluid mr-3 ">
+                            <div>
+                                <h3>Allison Holmes</h3>
+                                <span>Designer</span>
+                            </div>
+                        </div>
+                        <div>
+                            <p>&ldquo;Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, mollitia. Possimus mollitia nobis libero quidem aut tempore dolore iure maiores, perferendis, provident numquam illum nisi amet necessitatibus. A, provident
+                                aperiam!&rdquo;
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ftco-testimonial-1 ">
+                        <div class="ftco-testimonial-vcard d-flex align-items-center mb-4 ">
+                            <img src="images/testi3.jpg " alt="Image " class="img-fluid mr-3 ">
+                            <div>
+                                <h3>Allison Holmes</h3>
+                                <span>Designer</span>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, mollitia. Possimus mollitia nobis libero quidem aut tempore dolore iure maiores, perferendis, provident numquam illum nisi amet necessitatibus. A, provident aperiam!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ftco-testimonial-1 ">
+                        <div class="ftco-testimonial-vcard d-flex align-items-center mb-4 ">
+                            <img src="images/testi2.jpg " alt="Image " class="img-fluid mr-3 ">
+                            <div>
+                                <h3>Allison Holmes</h3>
+                                <span>Designer</span>
+                            </div>
+                        </div>
+                        <div>
+                            <p>&ldquo;Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, mollitia. Possimus mollitia nobis libero quidem aut tempore dolore iure maiores, perferendis, provident numquam illum nisi amet necessitatibus. A, provident
+                                aperiam!&rdquo;
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ftco-testimonial-1 ">
+                        <div class="ftco-testimonial-vcard d-flex align-items-center mb-4 ">
+                            <img src="images/testi1.jpg " alt="Image " class="img-fluid mr-3 ">
+                            <div>
+                                <h3>Allison Holmes</h3>
+                                <span>Designer</span>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, mollitia. Possimus mollitia nobis libero quidem aut tempore dolore iure maiores, perferendis, provident numquam illum nisi amet necessitatibus. A, provident aperiam!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="why-container p-5">
+        <div class="container text-center ">
+            <div class="heading ">
+                <h1 class="why ">Why Academy Works?</h1>
+
+            </div>
+        </div>
+        <div class="container-fluid pt-5 mt-5 ">
+            <div class=" ">
+                <div class="row ">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-6 ">
+                        <div class="card ">
+                            <div class="card-body " id="course-card-body ">
+                                <div class="row text-right ">
+                                    <img class="card-image " src="images/booksCourses.svg ">
+
+                                    <p class="card-text px-lg-3 ">courses</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-6 ">
+                        <div class="card ">
+                            <div class="card-body justify-content-center " id="course-card-body ">
+                                <div class="row ">
+                                    <img class=" card-image " src="images/forms-document-svgrepo-com.svg ">
+
+                                    <p class="card-text px-lg-3 "> Form</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-6 ">
+                        <div class="card ">
+                            <div class="card-body " id="course-card-body ">
+                                <div class="row ">
+                                    <img class="card-image " src="images/iconfinder_-_Research-Microbiology-Virus-Science-Microscope-Laboratory_6124199.svg ">
+
+                                    <p class="card-text px-lg-3 ">Research</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-6 ">
+                        <div class="card ">
+                            <div class="card-body " id="course-card-body ">
+                                <div class="row ">
+                                    <img class="card-image " src="images/calendar.svg ">
+
+                                    <p class="card-text px-lg-3 ">Exam Results</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-6 ">
+                        <div class="card ">
+                            <div class="card-body " id="course-card-body ">
+                                <div class="row ">
+                                    <img class="card-image " src="images/placement.svg ">
+
+                                    <p class="card-text px-lg-3 ">Placements</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-6 ">
+                        <div class="card ">
+                            <div class="card-body " id="course-card-body ">
+                                <div class="row ">
+                                    <img class="card-image " src="images/Handshake_icon_GREEN-BLUE.svg ">
+
+                                    <p class="card-text px-lg-3 ">Collaborations</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-6 ">
+                        <div class="card ">
+                            <div class="card-body " id="course-card-body ">
+                                <div class="row ">
+                                    <img class="card-image " src="images/e-learning-svgrepo-com.svg ">
+
+                                    <p class="card-text px-lg-3 ">E-learning</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-6 ">
+                        <div class="card ">
+                            <div class="card-body " id="course-card-body ">
+                                <div class="row ">
+                                    <img class="card-image " src="images/trophy-svgrepo-com.svg ">
+
+                                    <p class="card-text px-lg-3 ">Awards</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Popular Courses   -->
+
+    <section>
+        <div class="site-section ">
+            <div class="container ">
+                <div class="row mb-5 justify-content-center text-center ">
+                    <div class="col-lg-6">
+                        <h2 class="section-title-underline mb-3 ">
+                            <span>Online Azteca University News</span>
+                        </h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, id?</p>
+                    </div>
+                </div>
+
+                <div class="row ">
+                    <div class="col-12 ">
+                        <div class="owl-slide-3 owl-carousel ">
+
+                            <div class="course-1-item ">
+                                <figure class="thumnail ">
+                                    <a href="course-single.html "><img src="images/news1.jpg" alt="Image " class="img-fluid "></a>
+                                    <div class="price ">$99.00</div>
+                                    <div class="category ">
+                                        <h3>Online Study</h3>
+                                    </div>
+                                </figure>
+                                <div class="course-1-content pb-4 ">
+                                    <h2>Learn about the benefits of studying online</h2>
+                                    <div class="rating text-center mb-3 ">
+                                        <span class="icon-star2 text-warning "></span>
+                                        <span class="icon-star2 text-warning "></span>
+                                        <span class="icon-star2 text-warning "></span>
+                                        <span class="icon-star2 text-warning "></span>
+                                        <span class="icon-star2 text-warning "></span>
+                                    </div>
+                                    <p class="desc mb-4 ">earn about the benefits of studying online Educational Model Azteca University Educational Model Online The University Educational Model ...</p>
+                                    <p><a href="course-single.html " class="btn btn-primary rounded-0 px-4 ">Read More</a></p>
+                                </div>
+                            </div>
+                            <div class="course-1-item ">
+                                <figure class="thumnail ">
+                                    <a href="course-single.html "><img src="images/news1.jpg" alt="Image " class="img-fluid "></a>
+                                    <div class="price ">$99.00</div>
+                                    <div class="category ">
+                                        <h3>Online Study</h3>
+                                    </div>
+                                </figure>
+                                <div class="course-1-content pb-4 ">
+                                    <h2>Learn about the benefits of studying online</h2>
+                                    <div class="rating text-center mb-3 ">
+                                        <span class="icon-star2 text-warning "></span>
+                                        <span class="icon-star2 text-warning "></span>
+                                        <span class="icon-star2 text-warning "></span>
+                                        <span class="icon-star2 text-warning "></span>
+                                        <span class="icon-star2 text-warning "></span>
+                                    </div>
+                                    <p class="desc mb-4 ">earn about the benefits of studying online Educational Model Azteca University Educational Model Online The University Educational Model ...</p>
+                                    <p><a href="course-single.html " class="btn btn-primary rounded-0 px-4 ">Read More</a></p>
+                                </div>
+                            </div>
+                            <div class="course-1-item ">
+                                <figure class="thumnail ">
+                                    <a href="course-single.html "><img src="images/news1.jpg" alt="Image " class="img-fluid "></a>
+                                    <div class="price ">$99.00</div>
+                                    <div class="category ">
+                                        <h3>Online Study</h3>
+                                    </div>
+                                </figure>
+                                <div class="course-1-content pb-4 ">
+                                    <h2>Learn about the benefits of studying online</h2>
+                                    <div class="rating text-center mb-3 ">
+                                        <span class="icon-star2 text-warning "></span>
+                                        <span class="icon-star2 text-warning "></span>
+                                        <span class="icon-star2 text-warning "></span>
+                                        <span class="icon-star2 text-warning "></span>
+                                        <span class="icon-star2 text-warning "></span>
+                                    </div>
+                                    <p class="desc mb-4 ">earn about the benefits of studying online Educational Model Azteca University Educational Model Online The University Educational Model ...</p>
+                                    <p><a href="course-single.html " class="btn btn-primary rounded-0 px-4 ">Read More</a></p>
+                                </div>
+                            </div>
+
+                            <div class="course-1-item ">
+                                <figure class="thumnail ">
+                                    <a href="course-single.html "><img src="images/news1.jpg" alt="Image " class="img-fluid "></a>
+                                    <div class="price ">$99.00</div>
+                                    <div class="category ">
+                                        <h3>Online Study</h3>
+                                    </div>
+                                </figure>
+                                <div class="course-1-content pb-4 ">
+                                    <h2>Learn about the benefits of studying online</h2>
+                                    <div class="rating text-center mb-3 ">
+                                        <span class="icon-star2 text-warning "></span>
+                                        <span class="icon-star2 text-warning "></span>
+                                        <span class="icon-star2 text-warning "></span>
+                                        <span class="icon-star2 text-warning "></span>
+                                        <span class="icon-star2 text-warning "></span>
+                                    </div>
+                                    <p class="desc mb-4 ">earn about the benefits of studying online Educational Model Azteca University Educational Model Online The University Educational Model ...</p>
+                                    <p><a href="course-single.html " class="btn btn-primary rounded-0 px-4 ">Read More</a></p>
+                                </div>
+                            </div>
+                            <div class="course-1-item ">
+                                <figure class="thumnail ">
+                                    <a href="course-single.html "><img src="images/news1.jpg" alt="Image " class="img-fluid "></a>
+                                    <div class="price ">$99.00</div>
+                                    <div class="category ">
+                                        <h3>Online Study</h3>
+                                    </div>
+                                </figure>
+                                <div class="course-1-content pb-4 ">
+                                    <h2>Learn about the benefits of studying online</h2>
+                                    <div class="rating text-center mb-3 ">
+                                        <span class="icon-star2 text-warning "></span>
+                                        <span class="icon-star2 text-warning "></span>
+                                        <span class="icon-star2 text-warning "></span>
+                                        <span class="icon-star2 text-warning "></span>
+                                        <span class="icon-star2 text-warning "></span>
+                                    </div>
+                                    <p class="desc mb-4 ">earn about the benefits of studying online Educational Model Azteca University Educational Model Online The University Educational Model ...</p>
+                                    <p><a href="course-single.html " class="btn btn-primary rounded-0 px-4 ">Read More</a></p>
+                                </div>
+                            </div>
+                            <div class="course-1-item ">
+                                <figure class="thumnail ">
+                                    <a href="course-single.html "><img src="images/news1.jpg" alt="Image " class="img-fluid "></a>
+                                    <div class="price ">$99.00</div>
+                                    <div class="category ">
+                                        <h3>Online Study</h3>
+                                    </div>
+                                </figure>
+                                <div class="course-1-content pb-4 ">
+                                    <h2>Learn about the benefits of studying online</h2>
+                                    <div class="rating text-center mb-3 ">
+                                        <span class="icon-star2 text-warning "></span>
+                                        <span class="icon-star2 text-warning "></span>
+                                        <span class="icon-star2 text-warning "></span>
+                                        <span class="icon-star2 text-warning "></span>
+                                        <span class="icon-star2 text-warning "></span>
+                                    </div>
+                                    <p class="desc mb-4 ">earn about the benefits of studying online Educational Model Azteca University Educational Model Online The University Educational Model ...</p>
+                                    <p><a href="course-single.html " class="btn btn-primary rounded-0 px-4 ">Read More</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section>
+        <div class="news-updates ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-lg-9 ">
+                        <div class="section-heading ">
+                            <h2 class="text-black ">News &amp; Updates</h2>
+                            <a href="# ">Read All News</a>
+                        </div>
+                        <div class="row ">
+                            <div class="col-lg-6 ">
+                                <div class="post-entry-big ">
+                                    <a href="news-single.html " class="img-link "><img src="images/landing4.jpg " alt="Image " class="img-fluid "></a>
+                                    <div class="post-content ">
+                                        <div class="post-meta ">
+                                            <a href="# ">June 6, 2019</a>
+                                            <span class="mx-1 ">/</span>
+                                            <a href="# ">Admission</a>, <a href="# ">Updates</a>
+                                        </div>
+                                        <h3 class="post-heading "><a href="news-single.html ">Campus Camping and Learning Session</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 ">
+                                <div class="post-entry-big horizontal d-flex mb-4 ">
+                                    <a href="news-single.html " class="img-link mr-4 "><img src="images/landing3.jpg " alt="Image " class="img-fluid "></a>
+                                    <div class="post-content ">
+                                        <div class="post-meta ">
+                                            <a href="# ">June 6, 2019</a>
+                                            <span class="mx-1 ">/</span>
+                                            <a href="# ">Admission</a>, <a href="# ">Updates</a>
+                                        </div>
+                                        <h3 class="post-heading "><a href="news-single.html ">Campus Camping and Learning Session</a></h3>
+                                    </div>
+                                </div>
+                                <div class="post-entry-big horizontal d-flex mb-4 ">
+                                    <a href="news-single.html " class="img-link mr-4 "><img src="images/landingImage2.jpg " alt="Image " class="img-fluid "></a>
+                                    <div class="post-content ">
+                                        <div class="post-meta ">
+                                            <a href="# ">June 6, 2019</a>
+                                            <span class="mx-1 ">/</span>
+                                            <a href="# ">Admission</a>, <a href="# ">Updates</a>
+                                        </div>
+                                        <h3 class="post-heading "><a href="news-single.html ">Campus Camping and Learning Session</a></h3>
+                                    </div>
+                                </div>
+                                <div class="post-entry-big horizontal d-flex mb-4 ">
+                                    <a href="news-single.html " class="img-link mr-4 "><img src="images/landingImage1.jpg " alt="Image " class="img-fluid "></a>
+                                    <div class="post-content ">
+                                        <div class="post-meta ">
+                                            <a href="# ">June 6, 2019</a>
+                                            <span class="mx-1 ">/</span>
+                                            <a href="# ">Admission</a>, <a href="# ">Updates</a>
+                                        </div>
+                                        <h3 class="post-heading "><a href="news-single.html ">Campus Camping and Learning Session</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 ">
+                        <div class="section-heading ">
+                            <h2 class="text-black ">Campus Videos</h2>
+                            <a href="# ">View All Videos</a>
+                        </div>
+                        <a href="https://www.youtube.com/watch?v=KIop1hxFliQ " class="video-1 mb-4 " data-fancybox=" " data-ratio="2 ">
+                            <span class="play ">
+<span class="icon-play "></span>
+                            </span>
+                            <img src="images/mit.jpg " alt="Image " class="img-fluid ">
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=0qHWub21h5c " class="video-1 mb-4 " data-fancybox=" " data-ratio="2 ">
+                            <span class="play ">
+<span class="icon-play "></span>
+                            </span>
+                            <img src="images/standford.jpg " alt="Image " class="img-fluid ">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+
+        <div class="footer ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-lg-3 ">
+                        <p class="mb-4 "><img src="images/testLogo.svg" alt="Image " class="img-fluid "></p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nemo minima qui dolor, iusto iure.</p>
+                        <p><a href="# ">Learn More</a></p>
+                    </div>
+                    <div class="col-lg-3 ">
+                        <h3 class="footer-heading "><span>Academic Units</span></h3>
+                        <ul class="list-unstyled ">
+                            <li><a href="# ">Acuna</a></li>
+                            <li><a href="# ">Cancun</a></li>
+                            <li><a href="# ">Chalco</a></li>
+                            <li><a href="# ">The Kings</a></li>
+                            <li><a href="# ">San Juan del Rio</a></li>
+                            <li><a href="# ">Saint vincent</a></li>
+                            <li><a href="# ">Toluca</a></li>
+                            <li><a href="# ">Saragossa</a></li>
+                            <li><a href="# ">Zumpango</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 ">
+                        <h3 class="footer-heading "><span>Educational Offerings</span></h3>
+                        <ul class="list-unstyled ">
+                            <li><a href="# ">Bachelor Program</a></li>
+                            <li><a href="# ">Masters Program</a></li>
+                            <li><a href="# ">Doctoral Program</a></li>
+                            <li><a href="# ">Honorary Doctoral Program</a></li>
+                            <li><a href="# ">Post Doctoral {rogram</a></li>
+                            <li><a href="# ">Post Doctoral Fellowship</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 ">
+
+                        <h3 class="footer-heading "><span>Contact</span></h3>
+                        <ul class="list-unstyled ">
+                            <li><a href="tel:+525559863050" style="color:white;"><i class="fa fa-phone"></i> + 52 55 5986-3050</a></li>
+                            <li><a href="mailto:nowhere" style="color:white;"><i class="fa fa-envelope mr-1"></i>  international@univ-azteca.edu.mx</a></li>
+                            <li><button type="button " class="btn manual-btn btn-sm mt-2">Login</button></li>
+                            <li><button type="button" class="btn manual-btn btn-sm mt-2" data-toggle="modal" data-target="#form">Apply Now</button></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+
+    </section>
+    <div class="top-up-btn ">
+        <a href="#"><button type="button " class="up-btn btn-outline-warning " id="scroll-top-btn "><img src="images/upArrow.png " width="30 " height="30 "></button></a>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript " src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js "></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx " crossorigin="anonymous "></script>
+    <script src="js/owl.carousel.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js " integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin=" anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.8/jquery.mb.YTPlayer.min.js " integrity="sha512-jI/qyLWsZ9Tk0zrPfJgRFV5f0E/jGboe1Ellx881310LBvxDuKY5QX71GnBivDmBpsW12Wcrqrg48wN5/x3mjQ==" crossorigin=" anonymous "></script>
+    <script src="js/index.js "></script>
+    <script>
+        $('.owl-slide-3').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    </script>
+    <script>
+        $('.owl-slide').owlCarousel({
+            center: false,
+            items: 2,
+            loop: true,
+            stagePadding: 0,
+            margin: 30,
+            autoplay: true,
+            nav: true,
+            navText: ['<span class="icon-arrow_back ">', '<span class="icon-arrow_forward ">'],
+            responsive: {
+                300: {
+                    nav: true,
+                    items: 1
+                },
+                500: {
+                    nav: true,
+                    items: 1
+                },
+                600: {
+                    nav: true,
+                    items: 1
+                },
+                1000: {
+                    stagePadding: 0,
+                    nav: true,
+                    items: 2
+                },
+                1200: {
+                    stagePadding: 0,
+                    nav: true,
+                    items: 2
+                }
+            }
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+
+
+
+
+</body>
+
+</html>
