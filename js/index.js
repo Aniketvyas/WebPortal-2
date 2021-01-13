@@ -55,75 +55,41 @@ $(document).ready(function() {
     jQuery.fn.carousel.Constructor.TRANSITION_DURATION = 800 // 2 seconds
 });
 
-// window.onscroll = function() { myFunction() };
-
-// // Get the navbar
-// var navbar = document.getElementById("navbar");
-
-// // Get the offset position of the navbar
-// var sticky = navbar.offsetTop;
-
-// // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-// function myFunction() {
-//     if (window.pageYOffset >= sticky) {
-//         navbar.classList.add("sticky")
-//     } else {
-//         navbar.classList.remove("sticky");
-//     }
-// }
-// $(document).ready(function() {
-//     $('.hire-content').css("display", 'flex');
-//     // $('code').each(function(i, block) {
-//     //     hljs.highlightBlock(block);
-//     // });
-// });
-// .fea: hover {
-//         background: linear - gradient(#007cba, # 006 ba1, #005a87);
-
-//     ;
-
-// }
-
-// .fea:hover .count-number {
-
-//     color: white;
-
-// }
-
-// .fea:hover .plus {
-
-//     color: orange;
-
-// }
-
-// .fea:hover .box-text {
-
-//     color: orange;
-
-//     font-weight: bold;
-
-// }
 
 
 
-// document.getElementsByClassName("fea").onmouseover = () => {
-//     alert("hello")
-//     document.getElementsByClassName("fea").style.background = "linear-gradient(#007cba, #006ba1, #005a87);";
-//     document.getElementsByClassName("box-text").style.coloe = "white";
-//     document.getElementsByClassName("plus").style.color = "orange";
-// };
-// // document.getElementsByClassName("fea").onmouseout = function() { mouseOut() };
-
-// // function mouseOver() {
-// //     document.getElementsByClassName("fea").style.background = "linear-gradient(#007cba, #006ba1, #005a87);";
-// //     document.getElementsByClassName("box-text").style.coloe = "white";
-// //     document.getElementsByClassName("plus").style.color = "orange";
-
-// //     // document.getElementById("demo").style.color = "red";
-// // }
-
-// function mouseOut() {
-//     // document.getElementsByClassName("fea").style.background = "linear-gradient(#007cba, #006ba1, #005a87);";
-//     // document.getElementsByClassName("box-text").style.coloe="white";
-//     // document.getElementsByClassName("plus").style.color = "orange";
-// }
+var gallery = document.querySelector('#gallery');
+var getVal = function(elem, style) {
+    return parseInt(window.getComputedStyle(elem).getPropertyValue(style));
+};
+var getHeight = function(item) {
+    return item.querySelector('.content').getBoundingClientRect().height;
+};
+var resizeAll = function() {
+    var altura = getVal(gallery, 'grid-auto-rows');
+    var gap = getVal(gallery, 'grid-row-gap');
+    gallery.querySelectorAll('.gallery-item').forEach(function(item) {
+        var el = item;
+        el.style.gridRowEnd = "span " + Math.ceil((getHeight(item) + gap) / (altura + gap));
+    });
+};
+gallery.querySelectorAll('img').forEach(function(item) {
+    item.classList.add('byebye');
+    if (item.complete) {
+        console.log(item.src);
+    } else {
+        item.addEventListener('load', function() {
+            var altura = getVal(gallery, 'grid-auto-rows');
+            var gap = getVal(gallery, 'grid-row-gap');
+            var gitem = item.parentElement.parentElement;
+            gitem.style.gridRowEnd = "span " + Math.ceil((getHeight(gitem) + gap) / (altura + gap));
+            item.classList.remove('byebye');
+        });
+    }
+});
+window.addEventListener('resize', resizeAll);
+gallery.querySelectorAll('.gallery-item').forEach(function(item) {
+    item.addEventListener('click', function() {
+        item.classList.toggle('full');
+    });
+});
