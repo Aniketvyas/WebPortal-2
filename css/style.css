@@ -4526,7 +4526,6 @@ section.contact-content .bottom-content .address-content p {
     font-weight: 500;
 }
 #campus-list {
-    vertical-align: bottom;
     margin-top: 20%;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
