@@ -12,6 +12,22 @@
 </head>
 
 <body>
+    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="loginmodal-container">
+                <h1>Login to Your Account</h1><br>
+                <form>
+                    <input type="text" name="user" placeholder="Username">
+                    <input type="password" name="pass" placeholder="Password">
+                    <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+                </form>
+
+                <div class="login-help">
+                    <a href="#">Register</a> - <a href="#">Forgot Password</a>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="modal fade" id="form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -568,17 +584,17 @@
     <section class="sticky-top wow fadeInDown" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 1s; animation-name: fadeInDown;" id="navbar">
 
         <div id='top-nav'>
-            <div class="container pt-3">
+            <div class="container-fluid ml-auto pt-3">
                 <div class="row">
-                    <div class="col-xl-6 col-6">
+                    <div class="col-xl-4 pl-5">
                         <a href="tel:+525559863050" style="color:white;"><i class="fa fa-phone"></i> + 52 55 5986-3050</a>
                     </div>
-                    <div class="col-xl-4 col-6">
+                    <div class="col-xl-5">
                         <a href="mailto:nowhere" style="color:white;"><i class="fa fa-envelope mr-1"></i>  international@univ-azteca.edu.mx</a>
                     </div>
-                    <div class="col-xl-2">
-                        <button type="button " class="btn manual-btn btn-sm mt-2">Login</button>
-                        <button type="button" class="btn manual-btn btn-sm mt-2" data-toggle="modal" data-target="#form">Apply Now</button>
+                    <div class="col-xl-3 mt-2 ml-auto">
+                        <a href="#" class="btn manual-btn btn-sm " data-toggle="modal" data-target="#login-modal">Login</a>
+                        <button type="button " class="btn manual-btn btn-sm" data-toggle="modal" data-target="#form">Apply Now</button>
                     </div>
                 </div>
             </div>
@@ -654,7 +670,7 @@
                             <li class="nav-item pl-2"><a href="gallery.html" class="nav-link text-white">Gallery</a></li>
                             <li class="nav-item pl-2"><a href="contact.html" class="nav-link text-white">Contact Us</a></li>
 
-                            <li class="nav-link display-none"> <button type="button " class="btn manual-btn btn-sm mt-2">Login</button>
+                            <li class="nav-link display-none"><a href="#" class="btn manual-btn btn-sm mt-2" data-toggle="modal" data-target="#login-modal">Login</a>
                                 <button type="button" class="btn manual-btn btn-sm mt-2" data-toggle="modal" data-target="#form">Apply Now</button></li>
                         </ul>
 
@@ -663,87 +679,156 @@
             </div>
         </div>
     </section>
-    <div class="gallery" id="gallery">
-        <div class="gallery-item">
-            <div class="content"><img src="images/1.png" alt=""></div>
+
+    <section class="landing-page ">
+
+
+        <div class="container ">
+            <div class="landing-content ">
+                <div class="container ">
+                    <div class="col-xl-12 ">
+                        <div class="row ">
+                            <div class="col-xl-6 ">
+                                <h1 class="welcome-heading wow fadeIn " style="visibility: visible; animation-name: fadeIn; ">Gallery of Universidad Azteca</h1>
+                                <p class="text-white pt-4 welcome-content wow bounceIn " data-wow-delay="0.2s " style="visibility: visible; animation-delay: 0.2s; animation-name: bounceIn; ">We are focused on the individual self, offering each student a life plan that allows discovering the inner potential positively, allowing to find the right path, giving meaning to their lives and conduct their work based
+                                    on humanist priciples, building lives with the values of truth, justice and honesty.</p>
+                                <button type="button " class="btn manual-btn wow bounceIn " style="visibility: visible; animation-delay: 0.3s; animation-name: bounceIn; " data-wow-delay="0.3s ">Get Started</button>
+
+                            </div>
+                            <div class="col-xl-6 p-3 wow fadeIn " data-wow-delay="0.9s " style="visibility: visible;; animation-name: fadeIn; ">
+                                <img src="images/undraw_professor_8lrt.svg " class="img-fluid ">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <div class="gallery-item">
-            <div class="content"><img src="images/2.png" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="images/3.png" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="images/4.png" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="images/5.png" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="images/6.png" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="images/7.png" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="images/testi1.jpg" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="images/testi2.jpg" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="images/testi3.jpg" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="images/testi4.jpg" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="images/testi5.jpg" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="images/testi6.jpg" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="images/undraw_analyze_17kw.svg" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="images/undraw_Artificial_intelligence_re_enpp.svg" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="images/undraw_collab_8oes.svg" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="images/undraw_businessman_97x4.svg" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="images/undraw_Connecting_Teams_8ntu.svg" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="images/undraw_contract_uy56.svg" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="images/undraw_education_f8ru.svg" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="images/undraw_environmental_study_skau.svg" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="images/undraw_Helpful_sign_re_8ms5.svg" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="images/undraw_interview_rmcf.svg" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="images/undraw_my_answer_iw6k.svg" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="images/undraw_pay_online_b1hk.svg" alt=""></div>
-        </div>
-    </div>
+    </section>
 
 
 
+    <section class="container-fluid">
+        <div class="">
+            <div class="col-xl-12 col-md-12">
+                <div class="row p-3 m-3">
+                    <div class="col-xl-4 col-md-6">
+                        <div class="card align-items-center card-3">
+                            <div class="card-body">
+                                <img src="images/universidadAztecaImage1.jpg" class="img-fluid">
+                                <div class="overlay">
+                                    <div class="text">Hello World<br>
+                                        <p class="text-white">12-OCT-2020</p>
+                                    </div>
 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="card align-items-center card-3">
+                            <div class="card-body">
+                                <img src="images/universidadAztecaImage9.jpg" class="img-fluid">
+                                <div class="overlay">
+                                    <div class="text">Hello World<br>
+                                        <p class="text-white">12-OCT-2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6">
+                        <div class="card align-items-center card-3">
+                            <div class="card-body">
+                                <img src="images/universidadAztecaImage3.jpg" class="img-fluid">
+                                <div class="overlay">
+                                    <div class="text">Hello World<br>
+                                        <p class="text-white">12-OCT-2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="card align-items-center card-3">
+                            <div class="card-body">
+                                <img src="images/universidadAztecaImage4.jpg" class="img-fluid">
+                                <div class="overlay">
+                                    <div class="text">Hello World<br>
+                                        <p class="text-white">12-OCT-2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="card align-items-center card-3">
+                            <div class="card-body">
+                                <img src="images/universidadAztecaImage10.jpg" class="img-fluid">
+                                <div class="overlay">
+                                    <div class="text">Hello World<br>
+                                        <p class="text-white">12-OCT-2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="card align-items-center card-3">
+                            <div class="card-body">
+                                <img src="images/universidadAztecaImage11.jpg" class="img-fluid">
+                                <div class="overlay">
+                                    <div class="text">Hello World<br>
+                                        <p class="text-white">12-OCT-2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="card align-items-center card-3">
+                            <div class="card-body">
+                                <img src="images/universidadAztecaImage7.jpg" class="img-fluid">
+                                <div class="overlay">
+                                    <div class="text">Hello World<br>
+                                        <p class="text-white">12-OCT-2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="card align-items-center card-3">
+                            <div class="card-body">
+                                <img src="images/universidadAztecaImage8.jpg" class="img-fluid">
+                                <div class="overlay">
+                                    <div class="text">Hello World<br>
+                                        <p class="text-white">12-OCT-2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="card align-items-center card-3">
+                            <div class="card-body">
+                                <img src="images/universidadAztecaImage12.jpg" class="img-fluid">
+                                <div class="overlay">
+                                    <div class="text">Hello World<br>
+                                        <p class="text-white">12-OCT-2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -796,8 +881,8 @@
                     <ul class="list-unstyled ">
                         <li><a href="tel:+525559863050 " style="color:white; "><i class="fa fa-phone "></i> + 52 55 5986-3050</a></li>
                         <li><a href="mailto:nowhere " style="color:white; "><i class="fa fa-envelope mr-1 "></i>  international@univ-azteca.edu.mx</a></li>
-                        <li><button type="button " class="btn manual-btn btn-sm mt-2 ">Login</button></li>
-                        <li><button type="button " class="btn manual-btn btn-sm mt-2 " data-toggle="modal " data-target="#form ">Apply Now</button></li>
+                        <li> <button type="button" class="btn manual-btn btn-sm mt-2 " data-toggle="modal" data-target="#login-modal">Login</button></li>
+                        <li><button type="button " class="btn manual-btn btn-sm mt-2 " data-toggle="modal" data-target="#form">Apply Now</button></li>
 
                     </ul>
                 </div>
@@ -814,6 +899,7 @@
 
 
     <script type="text/javascript " src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js "></script>
+    <!-- <script src="js/bootstrap.js"></script>/ -->
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx " crossorigin="anonymous "></script>
     <script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>

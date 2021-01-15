@@ -19,6 +19,22 @@
 </head>
 
 <body>
+    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="loginmodal-container">
+                <h1>Login to Your Account</h1><br>
+                <form>
+                    <input type="text" name="user" placeholder="Username">
+                    <input type="password" name="pass" placeholder="Password">
+                    <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+                </form>
+
+                <div class="login-help">
+                    <a href="#">Register</a> - <a href="#">Forgot Password</a>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="modal fade" id="form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -575,17 +591,17 @@
     <section class="sticky-top wow fadeInDown" style="visibility: visible; animation-name:fadeInDown" id="navbar">
 
         <div id='top-nav'>
-            <div class="container pt-3">
+            <div class="container-fluid ml-auto pt-3">
                 <div class="row">
-                    <div class="col-xl-6 col-6">
+                    <div class="col-xl-4 pl-5">
                         <a href="tel:+525559863050" style="color:white;"><i class="fa fa-phone"></i> + 52 55 5986-3050</a>
                     </div>
-                    <div class="col-xl-4 col-6">
+                    <div class="col-xl-5">
                         <a href="mailto:nowhere" style="color:white;"><i class="fa fa-envelope mr-1"></i>  international@univ-azteca.edu.mx</a>
                     </div>
-                    <div class="col-xl-2">
-                        <button type="button " class="btn manual-btn btn-sm mt-2">Login</button>
-                        <button type="button" class="btn manual-btn btn-sm mt-2" data-toggle="modal" data-target="#form">Apply Now</button>
+                    <div class="col-xl-3 mt-2 ml-auto">
+                        <button type="button" class="btn manual-btn btn-sm " data-toggle="modal" data-target="#login-modal">Login</button>
+                        <button type="button " class="btn manual-btn btn-sm" data-toggle="modal" data-target="#form">Apply Now</button>
                     </div>
                 </div>
             </div>
@@ -661,7 +677,8 @@
                             <li class="nav-item pl-2"><a href="gallery.html" class="nav-link text-white">Gallery</a></li>
                             <li class="nav-item pl-2"><a href="contact.html" class="nav-link text-white">Contact Us</a></li>
 
-                            <li class="nav-link display-none"> <button type="button " class="btn manual-btn btn-sm mt-2">Login</button>
+                            <li class="nav-link display-none">
+                                <a href="#" class="btn manual-btn btn-sm mt-2" data-toggle="modal" data-target="#login-modal">Login</a>
                                 <button type="button" class="btn manual-btn btn-sm mt-2" data-toggle="modal" data-target="#form">Apply Now</button></li>
                         </ul>
 
@@ -809,9 +826,8 @@
                         <ul class="list-unstyled ">
                             <li><a href="tel:+525559863050" style="color:white;"><i class="fa fa-phone"></i> + 52 55 5986-3050</a></li>
                             <li><a href="mailto:nowhere" style="color:white;"><i class="fa fa-envelope mr-1"></i>  international@univ-azteca.edu.mx</a></li>
-                            <li><button type="button " class="btn manual-btn btn-sm mt-2">Login</button></li>
-                            <li><button type="button" class="btn manual-btn btn-sm mt-2" data-toggle="modal" data-target="#form">Apply Now</button></li>
-
+                            <li><button type="button" class="btn manual-btn btn-sm mt-2" data-toggle="modal" data-target="#login-modal">Login</button></li>
+                            <li> <button type="button" class="btn manual-btn btn-sm mt-2" data-toggle="modal" data-target="#form">Apply Now</button></li>
                         </ul>
                     </div>
                 </div>

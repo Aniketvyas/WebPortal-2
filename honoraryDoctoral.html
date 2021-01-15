@@ -14,7 +14,7 @@
     />
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="test.css">
+    <!-- <link rel="stylesheet" href="test.css"> -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
@@ -22,6 +22,22 @@
 </head>
 
 <body>
+    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="loginmodal-container">
+                <h1>Login to Your Account</h1><br>
+                <form>
+                    <input type="text" name="user" placeholder="Username">
+                    <input type="password" name="pass" placeholder="Password">
+                    <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+                </form>
+
+                <div class="login-help">
+                    <a href="#">Register</a> - <a href="#">Forgot Password</a>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="modal fade" id="form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -579,17 +595,17 @@
     <section class="sticky-top wow fadeInDown" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 1s; animation-name: fadeInDown;" id="navbar">
 
         <div id='top-nav'>
-            <div class="container pt-3">
+            <div class="container-fluid ml-auto pt-3">
                 <div class="row">
-                    <div class="col-xl-6 col-6">
+                    <div class="col-xl-4 pl-5">
                         <a href="tel:+525559863050" style="color:white;"><i class="fa fa-phone"></i> + 52 55 5986-3050</a>
                     </div>
-                    <div class="col-xl-4 col-6">
+                    <div class="col-xl-5">
                         <a href="mailto:nowhere" style="color:white;"><i class="fa fa-envelope mr-1"></i>  international@univ-azteca.edu.mx</a>
                     </div>
-                    <div class="col-xl-2">
-                        <button type="button " class="btn manual-btn btn-sm mt-2">Login</button>
-                        <button type="button" class="btn manual-btn btn-sm mt-2" data-toggle="modal" data-target="#form">Apply Now</button>
+                    <div class="col-xl-3 mt-2 ml-auto">
+                        <button type="button" class="btn manual-btn btn-sm " data-toggle="modal" data-target="#login-modal">Login</button>
+                        <button type="button " class="btn manual-btn btn-sm" data-toggle="modal" data-target="#form">Apply Now</button>
                     </div>
                 </div>
             </div>
@@ -597,63 +613,63 @@
 
 
         <div>
-            <div class="container-fluid">
-                <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid ">
+                <nav class="navbar navbar-expand-lg navbar-light ">
 
-                    <a class="navbar-brand" href="index.html"><img src="images/testLogo.svg"></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+                    <a class="navbar-brand " href="index.html "><img src="images/testLogo.svg "></a>
+                    <button class="navbar-toggler " type="button " data-toggle="collapse " data-target="#navbarSupportedContent " aria-controls="navbarSupportedContent " aria-expanded="false " aria-label="Toggle navigation ">
+              <span class="navbar-toggler-icon "></span>
             </button>
 
 
-                    <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-xl-5 mx-xl-5">
-                            <li class="nav-item dropdown color-blue pl-2">
-                                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="collapse navbar-collapse ml-auto " id="navbarSupportedContent ">
+                        <ul class="navbar-nav ml-xl-5 mx-xl-5 ">
+                            <li class="nav-item dropdown color-blue pl-2 ">
+                                <a class="nav-link dropdown-toggle text-white " href="# " id="navbarDropdown " role="button " data-toggle="dropdown " aria-haspopup="true " aria-expanded="false ">
                             About Us
                     </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="visionMission.html">Vision and Mission</a>
-                                    <a class="dropdown-item" href="chancellorsMessage.html">Chancellor Message</a>
+                                <div class="dropdown-menu " aria-labelledby="navbarDropdown ">
+                                    <a class="dropdown-item " href="visionMission.html ">Vision and Mission</a>
+                                    <a class="dropdown-item " href="chancellorsMessage.html ">Chancellor Message</a>
 
                                 </div>
                             </li>
 
-                            <li class="nav-item dropdown color-blue pl-2">
-                                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <li class="nav-item dropdown color-blue pl-2 ">
+                                <a class="nav-link dropdown-toggle text-white " href="# " id="navbarDropdown " role="button " data-toggle="dropdown " aria-haspopup="true " aria-expanded="false ">
                             Academics
                     </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="about.html">About Us</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
+                                <div class="dropdown-menu " aria-labelledby="navbarDropdown ">
+                                    <a class="dropdown-item " href="about.html ">About Us</a>
+                                    <a class="dropdown-item " href="# ">Another action</a>
+                                    <a class="dropdown-item " href="# ">Something else here</a>
                                 </div>
                             </li>
-                            <li class="nav-item dropdown pl-2">
-                                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <li class="nav-item dropdown pl-2 ">
+                                <a class="nav-link dropdown-toggle text-white " href="# " id="navbarDropdown " role="button " data-toggle="dropdown " aria-haspopup="true " aria-expanded="false ">
                      Admissions
                     </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="requirement.html">Requirements</a>
-                                    <a class="dropdown-item" href="refundPolicy.html">Refund Policy</a>
-                                    <a class="dropdown-item" href="nonDiscriminationPolicy.html">Non-Discrimination Policy </a>
+                                <div class="dropdown-menu " aria-labelledby="navbarDropdown ">
+                                    <a class="dropdown-item " href="requirement.html ">Requirements</a>
+                                    <a class="dropdown-item " href="refundPolicy.html ">Refund Policy</a>
+                                    <a class="dropdown-item " href="nonDiscriminationPolicy.html ">Non-Discrimination Policy </a>
                                 </div>
                             </li>
-                            <li class="nav-item dropdown pl-2">
-                                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <li class="nav-item dropdown pl-2 ">
+                                <a class="nav-link dropdown-toggle text-white " href="# " id="navbarDropdown " role="button " data-toggle="dropdown " aria-haspopup="true " aria-expanded="false ">
                      Educational Offer
                     </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" style="color:#254aa5; " href="bachelors.html ">Bachelor Degree</a>
-                                    <a class="dropdown-item" style="color:#254aa5; " href="masters.html ">Master Degree</a>
-                                    <a class="dropdown-item" style="columns: #242424;" href="doctoral.html">Doctoral Degree </a>
-                                    <a class="dropdown-item" style="color:#254aa5; " href="honoraryDoctoral.html ">Honorary Doctoral degree </a>
-                                    <a class="dropdown-item" style="color:#254aa5; " href="postDoctoral.html ">Post Doctoral Degree </a>
-                                    <a class="dropdown-item" style="color:#254aa5;" href="postDoctoralFellowship.html">Post doctoral Fellowshio </a>
+                                <div class="dropdown-menu " aria-labelledby="navbarDropdown ">
+                                    <a class="dropdown-item " style="color:#254aa5; " href="bachelors.html ">Bachelor Degree</a>
+                                    <a class="dropdown-item " style="color:#254aa5; " href="masters.html ">Master Degree</a>
+                                    <a class="dropdown-item " style="columns: #242424; " href="doctoral.html ">Doctoral Degree </a>
+                                    <a class="dropdown-item " style="color:#254aa5; " href="honoraryDoctoral.html ">Honorary Doctoral degree </a>
+                                    <a class="dropdown-item " style="color:#254aa5; " href="postDoctoral.html ">Post Doctoral Degree </a>
+                                    <a class="dropdown-item " style="color:#254aa5; " href="postDoctoralFellowship.html ">Post doctoral Fellowshio </a>
                                 </div>
                             </li>
-                            <li class="nav-item dropdown pl-2">
-                                <a class="nav-link dropdown-toggle text-white" href="# " id="navbarDropdown " role="button " data-toggle="dropdown " aria-haspopup="true " aria-expanded="false ">
+                            <li class="nav-item dropdown pl-2 ">
+                                <a class="nav-link dropdown-toggle text-white " href="# " id="navbarDropdown " role="button " data-toggle="dropdown " aria-haspopup="true " aria-expanded="false ">
                     Research
                   </a>
                                 <div class="dropdown-menu " aria-labelledby="navbarDropdown ">
@@ -662,11 +678,12 @@
                                     <a class="dropdown-item " href="# ">Something else here</a>
                                 </div>
                             </li>
-                            <li class="nav-item pl-2"><a href="gallery.html" class="nav-link text-white">Gallery</a></li>
-                            <li class="nav-item pl-2"><a href="contact.html" class="nav-link text-white">Contact Us</a></li>
+                            <li class="nav-item pl-2 "><a href="gallery.html " class="nav-link text-white ">Gallery</a></li>
+                            <li class="nav-item pl-2 "><a href="contact.html " class="nav-link text-white ">Contact Us</a></li>
 
-                            <li class="nav-link display-none"> <button type="button " class="btn manual-btn btn-sm mt-2">Login</button>
-                                <button type="button" class="btn manual-btn btn-sm mt-2" data-toggle="modal" data-target="#form">Apply Now</button></li>
+                            <li class="nav-link display-none ">
+                                <a href="# " class="btn manual-btn btn-sm mt-2 " data-toggle="modal " data-target="#login-modal ">Login</a>
+                                <button type="button " class="btn manual-btn btn-sm mt-2 " data-toggle="modal " data-target="#form ">Apply Now</button></li>
                         </ul>
 
                     </div>
@@ -674,21 +691,21 @@
             </div>
         </div>
     </section>
-    <section class="landing-page">
-        <div class="container-fluid">
-            <div class="landing-content">
-                <div class="container">
-                    <div class="col-xl-12">
-                        <div class="row">
-                            <div class="col-xl-6">
-                                <h1 class="welcome-heading wow fadeIn " style="visibility: visible; animation-name: fadeIn;">Honorary Doctoral Degree at Universidad Azetca</h1>
-                                <p class="text-white pt-4 welcome-content wow bounceIn" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: bounceIn;">We are focused on the individual self, offering each student a life plan that allows discovering the inner potential positively, allowing to find the right path, giving meaning to their lives and conduct their work based
+    <section class="landing-page ">
+        <div class="container-fluid ">
+            <div class="landing-content ">
+                <div class="container ">
+                    <div class="col-xl-12 ">
+                        <div class="row ">
+                            <div class="col-xl-6 ">
+                                <h1 class="welcome-heading wow fadeIn " style="visibility: visible; animation-name: fadeIn; ">Honorary Doctoral Degree at Universidad Azetca</h1>
+                                <p class="text-white pt-4 welcome-content wow bounceIn " data-wow-delay="0.2s " style="visibility: visible; animation-delay: 0.2s; animation-name: bounceIn; ">We are focused on the individual self, offering each student a life plan that allows discovering the inner potential positively, allowing to find the right path, giving meaning to their lives and conduct their work based
                                     on humanist priciples, building lives with the values of truth, justice and honesty.</p>
-                                <button type="button" class="btn manual-btn wow bounceIn" style="visibility: visible; animation-delay: 0.3s; animation-name: bounceIn;" data-wow-delay="0.3s">Get Started</button>
+                                <button type="button " class="btn manual-btn wow bounceIn " style="visibility: visible; animation-delay: 0.3s; animation-name: bounceIn; " data-wow-delay="0.3s ">Get Started</button>
 
                             </div>
-                            <div class="col-xl-6 pt-3 wow fadeIn" data-wow-delay="0.9s" style="visibility: visible;; animation-name: fadeIn;">
-                                <img src="images/undraw_professor_8lrt.svg" class="img-fluid">
+                            <div class="col-xl-6 pt-3 wow fadeIn " data-wow-delay="0.9s " style="visibility: visible;; animation-name: fadeIn; ">
+                                <img src="images/undraw_professor_8lrt.svg " class="img-fluid ">
                             </div>
                         </div>
                     </div>
@@ -699,11 +716,11 @@
     </section>
 
     <section>
-        <div class="container">
+        <div class="container ">
             <div class="col-xl-12 ">
-                <div class="content-wrapper text-center pt-5">
-                    <h1 class="heading text-center courses-heading">HONORARY DOCTORAL DEGREE</h1>
-                    <p class="text-dark font-weight-bold text-muted  pt-3">One of the most prestigious awards conferred by Azteca University is the Honorary Doctoral Degree. It is awarded to those individuals who have made extraordinary academic or social contributions, particularly in fields of relevance
+                <div class="content-wrapper text-center pt-5 ">
+                    <h1 class="heading text-center courses-heading ">HONORARY DOCTORAL DEGREE</h1>
+                    <p class="text-dark font-weight-bold text-muted pt-3 ">One of the most prestigious awards conferred by Azteca University is the Honorary Doctoral Degree. It is awarded to those individuals who have made extraordinary academic or social contributions, particularly in fields of relevance
                         and importance at national and at international levels. The selection of honorary degree recipients is overseen by a Committee at the Division of International Programs at Azteca University. The committee will seek approval to
                         recommend a slate of honorary degree candidates for approval. The nomination and approval process for honorary degrees is confidential, and all involved in the process must respect this requirement.<br>To avoid undue influence,
                         the review process by the committee is carried out anonymously, that is, the names of those who submitted the nomination are redacted from all documentation reviewed by Azteca University Director & Chair of International Programs,
@@ -719,34 +736,34 @@
 
 
 
-    <section class=" pt-xl-5">
-        <div class="jumbotron pt-5 ml-auto">
-            <h1 class="text-center wow fadeIn courses-heading" data-wow-delay="0.2s" style="visibility: visible; animation-name: fadeIn;">HONORARY DOCTORAL TITLES </h1>
-            <p class="text-center text-dark pt-xl-3 wow fadeIn " data-wow-delay="0.3s" style="visibility: visible; animation-name:fadeIn">Available:</p>
-            <div class="row pt-5">
+    <section class=" pt-xl-5 ">
+        <div class="jumbotron pt-5 ml-auto ">
+            <h1 class="text-center wow fadeIn courses-heading " data-wow-delay="0.2s " style="visibility: visible; animation-name: fadeIn; ">HONORARY DOCTORAL TITLES </h1>
+            <p class="text-center text-dark pt-xl-3 wow fadeIn " data-wow-delay="0.3s " style="visibility: visible; animation-name:fadeIn ">Available:</p>
+            <div class="row pt-5 ">
                 <div class="col-xl-6 list-first-half ">
 
-                    <ul class="list-group-3">
-                        <li class="list-group-item wow fadeIn " data-wow-delay="0.3s" style="visibility: visible; animation-name:fadeIn"><img src="images/tick.svg" width="20" height="20"> Honorary Doctor of Individual Studies, Hon. D.I.S.</li>
-                        <li class="list-group-item wow fadeIn " data-wow-delay="0.4s" style="visibility: visible; animation-name:fadeIn"><img src="images/tick.svg" width="20" height="20"> Honorary Doctor of Professional Studies, Hon.D.P.S.</li>
-                        <li class="list-group-item wow fadeIn " data-wow-delay="0.40s" style="visibility: visible; animation-name:fadeIn"><img src="images/tick.svg" width="20" height="20"> Honorary Doctor of Advances Studies, Hon. D.A.S</li>
-                        <li class="list-group-item wow fadeIn " data-wow-delay="0.60s" style="visibility: visible; animation-name:fadeIn"><img src="images/tick.svg" width="20" height="20"> Honorary Doctor of Arts, Hon. D.A.</li>
-                        <li class="list-group-item wow fadeIn " data-wow-delay="0.7s" style="visibility: visible; animation-name:fadeIn"><img src="images/tick.svg" width="20" height="20"> Honorary Doctor of Arts and Humanities, Hon. D.A.H.</li>
-                        <li class="list-group-item wow fadeIn " data-wow-delay="0.8s" style="visibility: visible; animation-name:fadeIn"><img src="images/tick.svg" width="20" height="20"> Honorary Doctor of Divinity, Hon. D.D</li>
-                        <li class="list-group-item wow fadeIn " data-wow-delay="0.8s" style="visibility: visible; animation-name:fadeIn"><img src="images/tick.svg" width="20" height="20"> Honorary Doctor of Fine Arts, Hon. D.F.A.</li>
-                        <li class="list-group-item wow fadeIn " data-wow-delay="0.8s" style="visibility: visible; animation-name:fadeIn"><img src="images/tick.svg" width="20" height="20"> Honorary Doctor of Humanities, Hon. D.H.</li>
-                        <li class="list-group-item wow fadeIn " data-wow-delay="0.8s" style="visibility: visible; animation-name:fadeIn"><img src="images/tick.svg" width="20" height="20"> Honorary Doctor of Liberal Arts, Hon. D.L.A.</li>
-                        <li class="list-group-item wow fadeIn " data-wow-delay="0.8s" style="visibility: visible; animation-name:fadeIn"><img src="images/tick.svg" width="20" height="20"> Honorary Doctor of Laws, Hon. LL.D. </li>
-                        <li class="list-group-item wow fadeIn " data-wow-delay="0.7s" style="visibility: visible; animation-name:fadeIn"><img src="images/tick.svg" width="20" height="20"> Honorary Doctor of the University, Hon. D.Univ </li>
-                        <li class="list-group-item wow fadeIn " data-wow-delay="0.7s" style="visibility: visible; animation-name:fadeIn"><img src="images/tick.svg" width="20" height="20"> Honorary Doctor of Religious Studies, Hon. DRS </li>
+                    <ul class="list-group-3 ">
+                        <li class="list-group-item wow fadeIn " data-wow-delay="0.3s " style="visibility: visible; animation-name:fadeIn "><img src="images/tick.svg " width="20 " height="20 "> Honorary Doctor of Individual Studies, Hon. D.I.S.</li>
+                        <li class="list-group-item wow fadeIn " data-wow-delay="0.4s " style="visibility: visible; animation-name:fadeIn "><img src="images/tick.svg " width="20 " height="20 "> Honorary Doctor of Professional Studies, Hon.D.P.S.</li>
+                        <li class="list-group-item wow fadeIn " data-wow-delay="0.40s " style="visibility: visible; animation-name:fadeIn "><img src="images/tick.svg " width="20 " height="20 "> Honorary Doctor of Advances Studies, Hon. D.A.S</li>
+                        <li class="list-group-item wow fadeIn " data-wow-delay="0.60s " style="visibility: visible; animation-name:fadeIn "><img src="images/tick.svg " width="20 " height="20 "> Honorary Doctor of Arts, Hon. D.A.</li>
+                        <li class="list-group-item wow fadeIn " data-wow-delay="0.7s " style="visibility: visible; animation-name:fadeIn "><img src="images/tick.svg " width="20 " height="20 "> Honorary Doctor of Arts and Humanities, Hon. D.A.H.</li>
+                        <li class="list-group-item wow fadeIn " data-wow-delay="0.8s " style="visibility: visible; animation-name:fadeIn "><img src="images/tick.svg " width="20 " height="20 "> Honorary Doctor of Divinity, Hon. D.D</li>
+                        <li class="list-group-item wow fadeIn " data-wow-delay="0.8s " style="visibility: visible; animation-name:fadeIn "><img src="images/tick.svg " width="20 " height="20 "> Honorary Doctor of Fine Arts, Hon. D.F.A.</li>
+                        <li class="list-group-item wow fadeIn " data-wow-delay="0.8s " style="visibility: visible; animation-name:fadeIn "><img src="images/tick.svg " width="20 " height="20 "> Honorary Doctor of Humanities, Hon. D.H.</li>
+                        <li class="list-group-item wow fadeIn " data-wow-delay="0.8s " style="visibility: visible; animation-name:fadeIn "><img src="images/tick.svg " width="20 " height="20 "> Honorary Doctor of Liberal Arts, Hon. D.L.A.</li>
+                        <li class="list-group-item wow fadeIn " data-wow-delay="0.8s " style="visibility: visible; animation-name:fadeIn "><img src="images/tick.svg " width="20 " height="20 "> Honorary Doctor of Laws, Hon. LL.D. </li>
+                        <li class="list-group-item wow fadeIn " data-wow-delay="0.7s " style="visibility: visible; animation-name:fadeIn "><img src="images/tick.svg " width="20 " height="20 "> Honorary Doctor of the University, Hon. D.Univ </li>
+                        <li class="list-group-item wow fadeIn " data-wow-delay="0.7s " style="visibility: visible; animation-name:fadeIn "><img src="images/tick.svg " width="20 " height="20 "> Honorary Doctor of Religious Studies, Hon. DRS </li>
 
                 </div>
-                <div class="col-xl-6 p-3">
-                    <img src="images/undraw_my_answer_iw6k.svg" class="img-fluid wow fadeIn " data-wow-delay="0.7s" style="visibility: visible; animation-name:fadeIn">
+                <div class="col-xl-6 p-3 ">
+                    <img src="images/undraw_my_answer_iw6k.svg " class="img-fluid wow fadeIn " data-wow-delay="0.7s " style="visibility: visible; animation-name:fadeIn ">
                 </div>
             </div>
-            <div class="btn-wrapper text-center pt-xl-5 mt-xl-5">
-                <button class="btn btn-primary" type="buttom">Download Prospectus</button>
+            <div class="btn-wrapper text-center pt-xl-5 mt-xl-5 ">
+                <button class="btn btn-primary " type="buttom ">Download Prospectus</button>
             </div>
         </div>
 
@@ -754,49 +771,49 @@
     </section>
 
     <section>
-        <div class="">
-            <div class="main-container">
-                <section class="reach-developer pt-5">
-                    <div class="container">
-                        <div class="content">
-                            <div class="top text-white">
-                                <p class="text-uppercase wow fadeIn" style="visibility: visible; animation-name:fadeIn">Our </p>
+        <div class=" ">
+            <div class="main-container ">
+                <section class="reach-developer pt-5 ">
+                    <div class="container ">
+                        <div class="content ">
+                            <div class="top text-white ">
+                                <p class="text-uppercase wow fadeIn " style="visibility: visible; animation-name:fadeIn ">Our </p>
 
-                                <div id="typed-strings">
-                                    <h2 class="text-uppercase wow fadeIn" data-wow-delay="0.2s" style="visibility: visible; animation-name:fadeIn">Acceptance Criteria</h2>
+                                <div id="typed-strings ">
+                                    <h2 class="text-uppercase wow fadeIn " data-wow-delay="0.2s " style="visibility: visible; animation-name:fadeIn ">Acceptance Criteria</h2>
                                 </div>
                             </div>
-                            <div class="timeline">
-                                <div class="line"></div>
+                            <div class="timeline ">
+                                <div class="line "></div>
                                 <ul>
-                                    <li class="text-center">
-                                        <div class="img-box">
-                                            <div class="ico transition">
-                                                <div class="ico-box bg-white">
-                                                    <img src="images/notification.svg" alt="" class="wow fadeIn" data-wow-delay="0.2s" style="visibility: visible; animation-name:fadeIn">
+                                    <li class="text-center ">
+                                        <div class="img-box ">
+                                            <div class="ico transition ">
+                                                <div class="ico-box bg-white ">
+                                                    <img src="images/notification.svg " alt=" " class="wow fadeIn " data-wow-delay="0.2s " style="visibility: visible; animation-name:fadeIn ">
                                                 </div>
                                             </div>
                                         </div>
-                                        <h6 class="transition font-weight-normal text-uppercase wow fadeIn" data-wow-delay="0.2s" style="visibility: visible; animation-name:fadeIn">Eligibility 1.</h6>
-                                        <p class="text-white font-weight-light wow fadeIn" data-wow-delay="0.2s" style="visibility: visible; animation-name:fadeIn">To be considered, a candidate must have sufficient stature and recognition to ensure that the awarding of an honorary degree enhances the reputation of Azteca University.</p>
+                                        <h6 class="transition font-weight-normal text-uppercase wow fadeIn " data-wow-delay="0.2s " style="visibility: visible; animation-name:fadeIn ">Eligibility 1.</h6>
+                                        <p class="text-white font-weight-light wow fadeIn " data-wow-delay="0.2s " style="visibility: visible; animation-name:fadeIn ">To be considered, a candidate must have sufficient stature and recognition to ensure that the awarding of an honorary degree enhances the reputation of Azteca University.</p>
                                     </li>
-                                    <li class="text-center">
-                                        <div class="img-box">
-                                            <div class="ico transition">
-                                                <div class="ico-box bg-white">
-                                                    <img src="images/process.svg" class="wow fadeIn" data-wow-delay="0.2s" style="visibility: visible; animation-name:fadeIn" alt="">
+                                    <li class="text-center ">
+                                        <div class="img-box ">
+                                            <div class="ico transition ">
+                                                <div class="ico-box bg-white ">
+                                                    <img src="images/process.svg " class="wow fadeIn " data-wow-delay="0.2s " style="visibility: visible; animation-name:fadeIn " alt=" ">
                                                 </div>
                                             </div>
                                         </div>
-                                        <h6 class="transition font-weight-normal text-uppercase wow fadeIn" data-wow-delay="0.2s" style="visibility: visible; animation-name:fadeIn">Eligibility 2.</h6>
-                                        <p class="text-white font-weight-light wow fadeIn" data-wow-delay="0.2s" style="visibility: visible; animation-name:fadeIn">The candidate, in character and conduct, shall have reflected the fundamental principles for which Azteca University stands.</p>
+                                        <h6 class="transition font-weight-normal text-uppercase wow fadeIn " data-wow-delay="0.2s " style="visibility: visible; animation-name:fadeIn ">Eligibility 2.</h6>
+                                        <p class="text-white font-weight-light wow fadeIn " data-wow-delay="0.2s " style="visibility: visible; animation-name:fadeIn ">The candidate, in character and conduct, shall have reflected the fundamental principles for which Azteca University stands.</p>
                                     </li>
 
-                                    <li class="text-center">
-                                        <div class="img-box">
-                                            <div class="ico transition">
-                                                <div class="ico-box bg-white">
-                                                    <img src="images/final.svg" alt="" class="wow fadeIn" data-wow-delay="0.2s" style="visibility: visible; animation-name:fadeIn">
+                                    <li class="text-center ">
+                                        <div class="img-box ">
+                                            <div class="ico transition ">
+                                                <div class="ico-box bg-white ">
+                                                    <img src="images/final.svg " alt=" " class="wow fadeIn " data-wow-delay="0.2s " style="visibility: visible; animation-name:fadeIn ">
                                                 </div>
                                             </div>
                                         </div>
@@ -804,22 +821,22 @@
                                         <p class="text-white font-weight-light wow fadeIn " style="visibility: visible; animation-name:fadeIn ">AConsideration will be given to candidates who have achieved eminence in scholarship or rendered distinguished contributions in their field; the Honors committee will give preference to those fields of endeavor
                                             that reflect Azteca University’s mission and core values.</p>
                                     </li>
-                                    <li class="text-center">
-                                        <div class="img-box">
-                                            <div class="ico transition">
-                                                <div class="ico-box bg-white">
-                                                    <img src="images/final.svg" alt="" class="wow fadeIn" data-wow-delay="0.2s" style="visibility: visible; animation-name:fadeIn">
+                                    <li class="text-center ">
+                                        <div class="img-box ">
+                                            <div class="ico transition ">
+                                                <div class="ico-box bg-white ">
+                                                    <img src="images/final.svg " alt=" " class="wow fadeIn " data-wow-delay="0.2s " style="visibility: visible; animation-name:fadeIn ">
                                                 </div>
                                             </div>
                                         </div>
                                         <h6 class="transition font-weight-normal text-uppercase wow fadeIn " style="visibility: visible; animation-name:fadeIn ">Eligibility 4.</h6>
                                         <p class="text-white font-weight-light wow fadeIn " style="visibility: visible; animation-name:fadeIn ">There should be a reasonable chance that the candidate will accept the honorary degree and be available to attend convocation in person and deliver an inspiring address to graduates.</p>
                                     </li>
-                                    <li class="text-center">
-                                        <div class="img-box">
-                                            <div class="ico transition">
-                                                <div class="ico-box bg-white">
-                                                    <img src="images/final.svg" alt="" class="wow fadeIn" data-wow-delay="0.2s" style="visibility: visible; animation-name:fadeIn">
+                                    <li class="text-center ">
+                                        <div class="img-box ">
+                                            <div class="ico transition ">
+                                                <div class="ico-box bg-white ">
+                                                    <img src="images/final.svg " alt=" " class="wow fadeIn " data-wow-delay="0.2s " style="visibility: visible; animation-name:fadeIn ">
                                                 </div>
                                             </div>
                                         </div>
@@ -838,27 +855,29 @@
     </section>
 
 
-    <section class=" pt-xl-5 pb-5">
-        <div class="container pt-5 ml-auto">
-            <h1 class="text-center course-heading wow fadeIn " data-wow-delay="0.2s" style="visibility: visible; animation-name: fadeIn;">NOMINATION CONSIDERATION</h1>
-            <p class="text-center text-white pt-xl-3 wow fadeIn " data-wow-delay="0.3s" style="visibility: visible; animation-name:fadeIn">The Committee will consider the following when reviewing each nomination:</p>
-            <div class="row pt-5">
+    <section class=" pt-xl-5 pb-5 ">
+        <div class="container pt-5 ml-auto ">
+            <h1 class="text-center course-heading wow fadeIn " data-wow-delay="0.2s " style="visibility: visible; animation-name: fadeIn; ">NOMINATION CONSIDERATION</h1>
+            <p class="text-center text-white pt-xl-3 wow fadeIn " data-wow-delay="0.3s " style="visibility: visible; animation-name:fadeIn ">The Committee will consider the following when reviewing each nomination:</p>
+            <div class="row pt-5 ">
                 <div class="col-xl-6 list-first-half ">
 
-                    <ul class="list-group">
-                        <li class="list-group-item wow fadeIn " data-wow-delay="0.3s" style="visibility: visible; animation-name:fadeIn"><img src="images/tick.svg" width="20" height="20"> In what ways is the candidate’s achievement truly outstanding?</li>
-                        <li class="list-group-item wow fadeIn " data-wow-delay="0.4s" style="visibility: visible; animation-name:fadeIn"><img src="images/tick.svg" width="20" height="20"> In what ways has the candidate made an extraordinary contribution to scholarship, society and culture?</li>
-                        <li class="list-group-item wow fadeIn " data-wow-delay="0.40s" style="visibility: visible; animation-name:fadeIn"><img src="images/tick.svg" width="20" height="20"> Will this person’s achievement be seen to be important and exemplary to the students who will graduate at convocation?</li>
-                        <li class="list-group-item wow fadeIn " data-wow-delay="0.60s" style="visibility: visible; animation-name:fadeIn"><img src="images/tick.svg" width="20" height="20"> Has this candidate already been recognized by other honors and awards?</li>
-                        <li class="list-group-item wow fadeIn " data-wow-delay="0.7s" style="visibility: visible; animation-name:fadeIn"><img src="images/tick.svg" width="20" height="20"> Has this candidate been appropriately recognized by the field or profession in which they excel?</li>
-                        <li class="list-group-item wow fadeIn " data-wow-delay="0.8s" style="visibility: visible; animation-name:fadeIn"><img src="images/tick.svg" width="20" height="20"> Is it appropriate for Azteca University to honour this candidate at this time?</li>
-                        <li class="list-group-item wow fadeIn " data-wow-delay="0.8s" style="visibility: visible; animation-name:fadeIn"><img src="images/tick.svg" width="20" height="20"> Is the candidate already aware of Azteca University and would the candidate appreciate the significance of the award?</li>
-                        <li class="list-group-item wow fadeIn " data-wow-delay="0.8s" style="visibility: visible; animation-name:fadeIn"><img src="images/tick.svg" width="20" height="20"> Does this candidate help Azteca University achieve the goal of reflecting the diversity of international society or the academic diversity of the university in the honors it bestows?</li>
+                    <ul class="list-group ">
+                        <li class="list-group-item wow fadeIn " data-wow-delay="0.3s " style="visibility: visible; animation-name:fadeIn "><img src="images/tick.svg " width="20 " height="20 "> In what ways is the candidate’s achievement truly outstanding?</li>
+                        <li class="list-group-item wow fadeIn " data-wow-delay="0.4s " style="visibility: visible; animation-name:fadeIn "><img src="images/tick.svg " width="20 " height="20 "> In what ways has the candidate made an extraordinary contribution to scholarship, society and culture?</li>
+                        <li class="list-group-item wow fadeIn " data-wow-delay="0.40s " style="visibility: visible; animation-name:fadeIn "><img src="images/tick.svg " width="20 " height="20 "> Will this person’s achievement be seen to be important and exemplary to the students who will graduate at convocation?</li>
+                        <li class="list-group-item wow fadeIn " data-wow-delay="0.60s " style="visibility: visible; animation-name:fadeIn "><img src="images/tick.svg " width="20 " height="20 "> Has this candidate already been recognized by other honors and awards?</li>
+                        <li class="list-group-item wow fadeIn " data-wow-delay="0.7s " style="visibility: visible; animation-name:fadeIn "><img src="images/tick.svg " width="20 " height="20 "> Has this candidate been appropriately recognized by the field or profession in which they excel?</li>
+                        <li class="list-group-item wow fadeIn " data-wow-delay="0.8s " style="visibility: visible; animation-name:fadeIn "><img src="images/tick.svg " width="20 " height="20 "> Is it appropriate for Azteca University to honour this candidate at this time?</li>
+                        <li class="list-group-item wow fadeIn " data-wow-delay="0.8s " style="visibility: visible; animation-name:fadeIn "><img src="images/tick.svg " width="20 " height="20 "> Is the candidate already aware of Azteca University and would the candidate appreciate the significance of the award?</li>
+                        <li class="list-group-item wow fadeIn " data-wow-delay="0.8s " style="visibility: visible; animation-name:fadeIn "><img src="images/tick.svg " width="20 " height="20 "> Does this candidate help Azteca University achieve the goal of reflecting the diversity of international society or the academic diversity of the university in the honors it
+                            bestows?
+                        </li>
 
                     </ul>
                 </div>
-                <div class="col-xl-6 mt-xl-5 pt-xl-5">
-                    <img src="images/undraw_Helpful_sign_re_8ms5.svg" class="img-fluid wow fadeIn " data-wow-delay="0.7s" style="visibility: visible; animation-name:fadeIn">
+                <div class="col-xl-6 mt-xl-5 pt-xl-5 ">
+                    <img src="images/undraw_Helpful_sign_re_8ms5.svg " class="img-fluid wow fadeIn " data-wow-delay="0.7s " style="visibility: visible; animation-name:fadeIn ">
                 </div>
             </div>
         </div>
@@ -909,7 +928,7 @@
             <div class="container ">
                 <div class="row ">
                     <div class="col-lg-3 ">
-                        <p class="mb-4 "><img src="images/testLogo.svg" alt="Image " class="img-fluid "></p>
+                        <p class="mb-4 "><img src="images/testLogo.svg " alt="Image " class="img-fluid "></p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nemo minima qui dolor, iusto iure.</p>
                         <p><a href="# ">Learn More</a></p>
                     </div>
@@ -942,10 +961,10 @@
 
                         <h3 class="footer-heading "><span>Contact</span></h3>
                         <ul class="list-unstyled ">
-                            <li><a href="tel:+525559863050" style="color:white;"><i class="fa fa-phone"></i> + 52 55 5986-3050</a></li>
-                            <li><a href="mailto:nowhere" style="color:white;"><i class="fa fa-envelope mr-1"></i>  international@univ-azteca.edu.mx</a></li>
-                            <li><button type="button " class="btn manual-btn btn-sm mt-2">Login</button></li>
-                            <li><button type="button" class="btn manual-btn btn-sm mt-2" data-toggle="modal" data-target="#form">Apply Now</button></li>
+                            <li><a href="tel:+525559863050 " style="color:white; "><i class="fa fa-phone "></i> + 52 55 5986-3050</a></li>
+                            <li><a href="mailto:nowhere " style="color:white; "><i class="fa fa-envelope mr-1 "></i>  international@univ-azteca.edu.mx</a></li>
+                            <li><button type="button" class="btn manual-btn btn-sm mt-2" data-toggle="modal" data-target="#login-modal">Login</button></li>
+                            <li> <button type="button" class="btn manual-btn btn-sm mt-2" data-toggle="modal" data-target="#form">Apply Now</button></li>
 
                         </ul>
                     </div>
